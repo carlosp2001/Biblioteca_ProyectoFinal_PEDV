@@ -21,5 +21,20 @@ namespace Proyecto_Biblioteca
         {
 
         }
+        clsConexion BD = new clsConexion();
+
+        private void Frm_Login_Empleado_Load(object sender, EventArgs e)
+        {
+            BD.abrir();
+
+
+        }
+
+        private void btn_Ingresar_Click(object sender, EventArgs e)
+        {
+            string usuario = txt_Usuario_Empl.Text;
+            string contrasena = txt_Contraseña_Empl.Text;
+            BD.login(usuario, contrasena);
+        }
     }
 }

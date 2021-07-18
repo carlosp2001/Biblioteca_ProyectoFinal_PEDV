@@ -62,12 +62,29 @@ namespace Proyecto_Biblioteca
             }
             else
             {
-                MessageBox.Show("Usuario no encontrado");
+                SqlCommand cmd1 = new SqlCommand("SELECT USERNAME_USUARIO, PASSWORD_USUARIO FROM Usuarios WHERE USERNAME_USUARIO=@usuario1 AND PASSWORD_USUARIO=@pas1", sconexion);
+
+                cmd1.Parameters.AddWithValue("usuario1", username);
+                cmd1.Parameters.AddWithValue("pas1", password);
+                SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
+                DataTable dt1 = new DataTable();
+                sda1.Fill(dt1);
+                if (dt1.Rows.Count == 1)
+                {
+                    MessageBox.Show("Usuario Encontrado");
+
+                }
+                else
+                {
+                    MessageBox.Show("Usuario no encontrado");
+                }
+
             }
             
-        
 
-           
+
+
+
         }
         /*public void Frm_Login_Admi(string usuario, string contrasena)
         {

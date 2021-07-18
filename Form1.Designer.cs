@@ -36,6 +36,7 @@ namespace Proyecto_Biblioteca
             this.txt_Usuario_Empl = new System.Windows.Forms.TextBox();
             this.txt_Contraseña_Empl = new System.Windows.Forms.TextBox();
             this.btn_Ingresar = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +74,7 @@ namespace Proyecto_Biblioteca
             // txt_Usuario_Empl
             // 
             this.txt_Usuario_Empl.Location = new System.Drawing.Point(120, 93);
-            this.txt_Usuario_Empl.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_Usuario_Empl.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Usuario_Empl.Name = "txt_Usuario_Empl";
             this.txt_Usuario_Empl.Size = new System.Drawing.Size(99, 20);
             this.txt_Usuario_Empl.TabIndex = 3;
@@ -81,15 +82,16 @@ namespace Proyecto_Biblioteca
             // txt_Contraseña_Empl
             // 
             this.txt_Contraseña_Empl.Location = new System.Drawing.Point(120, 150);
-            this.txt_Contraseña_Empl.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_Contraseña_Empl.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Contraseña_Empl.Name = "txt_Contraseña_Empl";
+            this.txt_Contraseña_Empl.PasswordChar = '*';
             this.txt_Contraseña_Empl.Size = new System.Drawing.Size(99, 20);
             this.txt_Contraseña_Empl.TabIndex = 4;
             // 
             // btn_Ingresar
             // 
             this.btn_Ingresar.Location = new System.Drawing.Point(190, 200);
-            this.btn_Ingresar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn_Ingresar.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Ingresar.Name = "btn_Ingresar";
             this.btn_Ingresar.Size = new System.Drawing.Size(81, 30);
             this.btn_Ingresar.TabIndex = 5;
@@ -97,11 +99,23 @@ namespace Proyecto_Biblioteca
             this.btn_Ingresar.UseVisualStyleBackColor = true;
             this.btn_Ingresar.Click += new System.EventHandler(this.btn_Ingresar_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(240, 152);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(118, 17);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "Mostrar Contraseña";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Frm_Login_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 258);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btn_Ingresar);
             this.Controls.Add(this.txt_Contraseña_Empl);
             this.Controls.Add(this.txt_Usuario_Empl);
@@ -109,9 +123,10 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Frm_Login_Empleado";
             this.Text = "GOODREADER";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_Login_Empleado_FormClosed);
             this.Load += new System.EventHandler(this.Frm_Login_Empleado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,6 +141,7 @@ namespace Proyecto_Biblioteca
         private System.Windows.Forms.TextBox txt_Usuario_Empl;
         private System.Windows.Forms.TextBox txt_Contraseña_Empl;
         private System.Windows.Forms.Button btn_Ingresar;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

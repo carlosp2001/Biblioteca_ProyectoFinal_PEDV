@@ -16,5 +16,17 @@ namespace Proyecto_Biblioteca
         {
             InitializeComponent();
         }
+
+
+        private void FrmEmpleado_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FrmEmpleado_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Frm_Login_Empleado frm_Login_Empleado = new Frm_Login_Empleado();
+            frm_Login_Empleado.Show();
+        }
     }
 }

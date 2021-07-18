@@ -37,51 +37,58 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Emple_AgreLect
             // 
-            this.btn_Emple_AgreLect.Location = new System.Drawing.Point(535, 168);
+            this.btn_Emple_AgreLect.Location = new System.Drawing.Point(169, 59);
+            this.btn_Emple_AgreLect.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Emple_AgreLect.Name = "btn_Emple_AgreLect";
-            this.btn_Emple_AgreLect.Size = new System.Drawing.Size(545, 117);
+            this.btn_Emple_AgreLect.Size = new System.Drawing.Size(172, 41);
             this.btn_Emple_AgreLect.TabIndex = 0;
             this.btn_Emple_AgreLect.Text = "Agregar Un Nuevo Lector";
             this.btn_Emple_AgreLect.UseVisualStyleBackColor = true;
             // 
             // btn_Emple_Presta
             // 
-            this.btn_Emple_Presta.Location = new System.Drawing.Point(535, 366);
+            this.btn_Emple_Presta.Location = new System.Drawing.Point(169, 129);
+            this.btn_Emple_Presta.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Emple_Presta.Name = "btn_Emple_Presta";
-            this.btn_Emple_Presta.Size = new System.Drawing.Size(545, 117);
+            this.btn_Emple_Presta.Size = new System.Drawing.Size(172, 41);
             this.btn_Emple_Presta.TabIndex = 1;
             this.btn_Emple_Presta.Text = "Realizar Prestamo";
             this.btn_Emple_Presta.UseVisualStyleBackColor = true;
             // 
             // btn_Emple_EntreLib
             // 
-            this.btn_Emple_EntreLib.Location = new System.Drawing.Point(535, 592);
+            this.btn_Emple_EntreLib.Location = new System.Drawing.Point(169, 208);
+            this.btn_Emple_EntreLib.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Emple_EntreLib.Name = "btn_Emple_EntreLib";
-            this.btn_Emple_EntreLib.Size = new System.Drawing.Size(545, 117);
+            this.btn_Emple_EntreLib.Size = new System.Drawing.Size(172, 41);
             this.btn_Emple_EntreLib.TabIndex = 2;
             this.btn_Emple_EntreLib.Text = "Recibir Entrega De Libro";
             this.btn_Emple_EntreLib.UseVisualStyleBackColor = true;
             // 
             // btn_Emple_Fact
             // 
-            this.btn_Emple_Fact.Location = new System.Drawing.Point(535, 806);
+            this.btn_Emple_Fact.Location = new System.Drawing.Point(169, 283);
+            this.btn_Emple_Fact.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Emple_Fact.Name = "btn_Emple_Fact";
-            this.btn_Emple_Fact.Size = new System.Drawing.Size(545, 117);
+            this.btn_Emple_Fact.Size = new System.Drawing.Size(172, 41);
             this.btn_Emple_Fact.TabIndex = 3;
             this.btn_Emple_Fact.Text = "Realizar Factura";
             this.btn_Emple_Fact.UseVisualStyleBackColor = true;
             // 
             // FrmEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1743, 1142);
+            this.ClientSize = new System.Drawing.Size(481, 379);
             this.Controls.Add(this.btn_Emple_Fact);
             this.Controls.Add(this.btn_Emple_EntreLib);
             this.Controls.Add(this.btn_Emple_Presta);
             this.Controls.Add(this.btn_Emple_AgreLect);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "FrmEmpleado";
             this.Text = "EMPLEADO";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEmpleado_FormClosed);
+            this.Load += new System.EventHandler(this.FrmEmpleado_Load);
             this.ResumeLayout(false);
 
         }

@@ -43,11 +43,11 @@ namespace Proyecto_Biblioteca
                 MessageBox.Show("Ocurrio un error al cerrar");
             }
         }
-        public void login(string username, string password)
+        public int login(string username, string password)
         {
 
-            
-               
+
+            int tipologin=0;
             SqlCommand cmd = new SqlCommand("SELECT USERNAME_ADMIN, PASSWORD_ADMIN FROM Administradores WHERE USERNAME_ADMIN=@usuario AND PASSWORD_ADMIN=@pas", sconexion);
                 
             cmd.Parameters.AddWithValue("usuario", username);
@@ -58,6 +58,9 @@ namespace Proyecto_Biblioteca
             if (dt.Rows.Count == 1)
             {
                 MessageBox.Show("Usuario Encontrado");
+                tipologin=1;
+                
+
 
             }
             else
@@ -72,7 +75,7 @@ namespace Proyecto_Biblioteca
                 if (dt1.Rows.Count == 1)
                 {
                     MessageBox.Show("Usuario Encontrado");
-
+                    tipologin = 2;
                 }
                 else
                 {
@@ -80,10 +83,7 @@ namespace Proyecto_Biblioteca
                 }
 
             }
-            
-
-
-
+            return tipologin;
 
         }
         /*public void Frm_Login_Admi(string usuario, string contrasena)

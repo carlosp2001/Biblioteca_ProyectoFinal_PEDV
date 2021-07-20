@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_Biblioteca
 {
-    partial class FrmAutor
+    partial class FrmAutorTable
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,18 @@ namespace Proyecto_Biblioteca
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Modi_autor = new System.Windows.Forms.Button();
             this.btn_Agre_autor = new System.Windows.Forms.Button();
             this.dgv_admi_cat = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_Telefono_autor = new System.Windows.Forms.TextBox();
+            this.iDAUTORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nOMBRESAUTORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aPELLIDOSAUTORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nACIONALIDADAUTORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bIBLIOTECADataSet = new Proyecto_Biblioteca.BIBLIOTECADataSet();
+            this.txt_Nacionalidad_autor = new System.Windows.Forms.TextBox();
             this.txt_Apellido_autor = new System.Windows.Forms.TextBox();
             this.txt_Nombre_autor = new System.Windows.Forms.TextBox();
             this.txt_Id_autor = new System.Windows.Forms.TextBox();
@@ -46,7 +48,11 @@ namespace Proyecto_Biblioteca
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.autoresTableAdapter = new Proyecto_Biblioteca.BIBLIOTECADataSetTableAdapters.AutoresTableAdapter();
+            this.btn_Eli_Autor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admi_cat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,95 +69,95 @@ namespace Proyecto_Biblioteca
             // btn_Modi_autor
             // 
             this.btn_Modi_autor.Location = new System.Drawing.Point(407, 196);
-            this.btn_Modi_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn_Modi_autor.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Modi_autor.Name = "btn_Modi_autor";
             this.btn_Modi_autor.Size = new System.Drawing.Size(62, 36);
             this.btn_Modi_autor.TabIndex = 30;
             this.btn_Modi_autor.Text = "Modificar";
             this.btn_Modi_autor.UseVisualStyleBackColor = true;
+            this.btn_Modi_autor.Click += new System.EventHandler(this.btn_Modi_autor_Click);
             // 
             // btn_Agre_autor
             // 
             this.btn_Agre_autor.Location = new System.Drawing.Point(407, 138);
-            this.btn_Agre_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn_Agre_autor.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Agre_autor.Name = "btn_Agre_autor";
             this.btn_Agre_autor.Size = new System.Drawing.Size(62, 33);
             this.btn_Agre_autor.TabIndex = 29;
             this.btn_Agre_autor.Text = "Agregar";
             this.btn_Agre_autor.UseVisualStyleBackColor = true;
+            this.btn_Agre_autor.Click += new System.EventHandler(this.btn_Agre_autor_Click);
             // 
             // dgv_admi_cat
             // 
             this.dgv_admi_cat.AllowUserToAddRows = false;
-            this.dgv_admi_cat.AllowUserToDeleteRows = false;
+            this.dgv_admi_cat.AllowUserToOrderColumns = true;
+            this.dgv_admi_cat.AutoGenerateColumns = false;
+            this.dgv_admi_cat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_admi_cat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_admi_cat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.iDAUTORDataGridViewTextBoxColumn,
+            this.nOMBRESAUTORDataGridViewTextBoxColumn,
+            this.aPELLIDOSAUTORDataGridViewTextBoxColumn,
+            this.nACIONALIDADAUTORDataGridViewTextBoxColumn});
+            this.dgv_admi_cat.DataSource = this.autoresBindingSource;
             this.dgv_admi_cat.Location = new System.Drawing.Point(54, 320);
-            this.dgv_admi_cat.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dgv_admi_cat.Margin = new System.Windows.Forms.Padding(1);
             this.dgv_admi_cat.Name = "dgv_admi_cat";
-            this.dgv_admi_cat.ReadOnly = true;
-            this.dgv_admi_cat.RowHeadersWidth = 123;
+            this.dgv_admi_cat.RowHeadersWidth = 40;
             this.dgv_admi_cat.RowTemplate.Height = 46;
-            this.dgv_admi_cat.Size = new System.Drawing.Size(451, 79);
+            this.dgv_admi_cat.Size = new System.Drawing.Size(448, 79);
             this.dgv_admi_cat.TabIndex = 28;
+            this.dgv_admi_cat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_admi_cat_CellClick);
+            this.dgv_admi_cat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_admi_cat_CellContentClick);
             // 
-            // Column1
+            // iDAUTORDataGridViewTextBoxColumn
             // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.MinimumWidth = 15;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 300;
+            this.iDAUTORDataGridViewTextBoxColumn.DataPropertyName = "ID_AUTOR";
+            this.iDAUTORDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDAUTORDataGridViewTextBoxColumn.Name = "iDAUTORDataGridViewTextBoxColumn";
             // 
-            // Column2
+            // nOMBRESAUTORDataGridViewTextBoxColumn
             // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.MinimumWidth = 15;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 250;
+            this.nOMBRESAUTORDataGridViewTextBoxColumn.DataPropertyName = "NOMBRES_AUTOR";
+            this.nOMBRESAUTORDataGridViewTextBoxColumn.HeaderText = "Nombres";
+            this.nOMBRESAUTORDataGridViewTextBoxColumn.Name = "nOMBRESAUTORDataGridViewTextBoxColumn";
             // 
-            // Column3
+            // aPELLIDOSAUTORDataGridViewTextBoxColumn
             // 
-            this.Column3.HeaderText = "Apellido";
-            this.Column3.MinimumWidth = 15;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 250;
+            this.aPELLIDOSAUTORDataGridViewTextBoxColumn.DataPropertyName = "APELLIDOS_AUTOR";
+            this.aPELLIDOSAUTORDataGridViewTextBoxColumn.HeaderText = "Apellidos";
+            this.aPELLIDOSAUTORDataGridViewTextBoxColumn.Name = "aPELLIDOSAUTORDataGridViewTextBoxColumn";
             // 
-            // Column4
+            // nACIONALIDADAUTORDataGridViewTextBoxColumn
             // 
-            this.Column4.HeaderText = "Telefono";
-            this.Column4.MinimumWidth = 15;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 250;
+            this.nACIONALIDADAUTORDataGridViewTextBoxColumn.DataPropertyName = "NACIONALIDAD_AUTOR";
+            this.nACIONALIDADAUTORDataGridViewTextBoxColumn.HeaderText = "Nacionalidad";
+            this.nACIONALIDADAUTORDataGridViewTextBoxColumn.Name = "nACIONALIDADAUTORDataGridViewTextBoxColumn";
             // 
-            // Column5
+            // autoresBindingSource
             // 
-            this.Column5.HeaderText = "Nacionalidad";
-            this.Column5.MinimumWidth = 15;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 250;
+            this.autoresBindingSource.DataMember = "Autores";
+            this.autoresBindingSource.DataSource = this.bIBLIOTECADataSet;
+            this.autoresBindingSource.CurrentChanged += new System.EventHandler(this.autoresBindingSource_CurrentChanged);
             // 
-            // txt_Telefono_autor
+            // bIBLIOTECADataSet
             // 
-            this.txt_Telefono_autor.Location = new System.Drawing.Point(124, 243);
-            this.txt_Telefono_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.txt_Telefono_autor.Name = "txt_Telefono_autor";
-            this.txt_Telefono_autor.Size = new System.Drawing.Size(61, 20);
-            this.txt_Telefono_autor.TabIndex = 23;
+            this.bIBLIOTECADataSet.DataSetName = "BIBLIOTECADataSet";
+            this.bIBLIOTECADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txt_Nacionalidad_autor
+            // 
+            this.txt_Nacionalidad_autor.Location = new System.Drawing.Point(124, 243);
+            this.txt_Nacionalidad_autor.Margin = new System.Windows.Forms.Padding(1);
+            this.txt_Nacionalidad_autor.Name = "txt_Nacionalidad_autor";
+            this.txt_Nacionalidad_autor.Size = new System.Drawing.Size(61, 20);
+            this.txt_Nacionalidad_autor.TabIndex = 23;
             // 
             // txt_Apellido_autor
             // 
             this.txt_Apellido_autor.Location = new System.Drawing.Point(124, 196);
-            this.txt_Apellido_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_Apellido_autor.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Apellido_autor.Name = "txt_Apellido_autor";
             this.txt_Apellido_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Apellido_autor.TabIndex = 22;
@@ -159,7 +165,7 @@ namespace Proyecto_Biblioteca
             // txt_Nombre_autor
             // 
             this.txt_Nombre_autor.Location = new System.Drawing.Point(124, 147);
-            this.txt_Nombre_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_Nombre_autor.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Nombre_autor.Name = "txt_Nombre_autor";
             this.txt_Nombre_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Nombre_autor.TabIndex = 21;
@@ -167,7 +173,7 @@ namespace Proyecto_Biblioteca
             // txt_Id_autor
             // 
             this.txt_Id_autor.Location = new System.Drawing.Point(124, 99);
-            this.txt_Id_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_Id_autor.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Id_autor.Name = "txt_Id_autor";
             this.txt_Id_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Id_autor.TabIndex = 20;
@@ -212,15 +218,31 @@ namespace Proyecto_Biblioteca
             this.label2.TabIndex = 16;
             this.label2.Text = "Id:";
             // 
-            // FrmAutor
+            // autoresTableAdapter
+            // 
+            this.autoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // btn_Eli_Autor
+            // 
+            this.btn_Eli_Autor.Location = new System.Drawing.Point(407, 256);
+            this.btn_Eli_Autor.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Eli_Autor.Name = "btn_Eli_Autor";
+            this.btn_Eli_Autor.Size = new System.Drawing.Size(62, 33);
+            this.btn_Eli_Autor.TabIndex = 31;
+            this.btn_Eli_Autor.Text = "Eliminar";
+            this.btn_Eli_Autor.UseVisualStyleBackColor = true;
+            this.btn_Eli_Autor.Click += new System.EventHandler(this.btn_Eli_Autor_Click);
+            // 
+            // FrmAutorTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 429);
+            this.Controls.Add(this.btn_Eli_Autor);
             this.Controls.Add(this.btn_Modi_autor);
             this.Controls.Add(this.btn_Agre_autor);
             this.Controls.Add(this.dgv_admi_cat);
-            this.Controls.Add(this.txt_Telefono_autor);
+            this.Controls.Add(this.txt_Nacionalidad_autor);
             this.Controls.Add(this.txt_Apellido_autor);
             this.Controls.Add(this.txt_Nombre_autor);
             this.Controls.Add(this.txt_Id_autor);
@@ -229,10 +251,13 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.Name = "FrmAutor";
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "FrmAutorTable";
             this.Text = "AUTOR";
+            this.Load += new System.EventHandler(this.FrmAutor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admi_cat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,7 +269,7 @@ namespace Proyecto_Biblioteca
         private System.Windows.Forms.Button btn_Modi_autor;
         private System.Windows.Forms.Button btn_Agre_autor;
         private System.Windows.Forms.DataGridView dgv_admi_cat;
-        private System.Windows.Forms.TextBox txt_Telefono_autor;
+        private System.Windows.Forms.TextBox txt_Nacionalidad_autor;
         private System.Windows.Forms.TextBox txt_Apellido_autor;
         private System.Windows.Forms.TextBox txt_Nombre_autor;
         private System.Windows.Forms.TextBox txt_Id_autor;
@@ -252,10 +277,13 @@ namespace Proyecto_Biblioteca
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private BIBLIOTECADataSet bIBLIOTECADataSet;
+        private System.Windows.Forms.BindingSource autoresBindingSource;
+        private BIBLIOTECADataSetTableAdapters.AutoresTableAdapter autoresTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDAUTORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nOMBRESAUTORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aPELLIDOSAUTORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nACIONALIDADAUTORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_Eli_Autor;
     }
 }

@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BIBLIOTECADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIBLIOTECADataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="clsConexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -59,11 +64,17 @@
     <Compile Include="FrmAdministrador.Designer.cs">
       <DependentUpon>FrmAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAutor.cs">
+    <Compile Include="FrmAutorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAutor.Designer.cs">
-      <DependentUpon>FrmAutor.cs</DependentUpon>
+    <Compile Include="FrmAutorForm.Designer.cs">
+      <DependentUpon>FrmAutorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutorTable.Designer.cs">
+      <DependentUpon>FrmAutorTable.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCategoria.cs">
       <SubType>Form</SubType>
@@ -145,8 +156,11 @@
     <EmbeddedResource Include="FrmAdministrador.resx">
       <DependentUpon>FrmAdministrador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAutor.resx">
-      <DependentUpon>FrmAutor.cs</DependentUpon>
+    <EmbeddedResource Include="FrmAutorForm.resx">
+      <DependentUpon>FrmAutorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorTable.resx">
+      <DependentUpon>FrmAutorTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCategoria.resx">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
@@ -193,6 +207,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BIBLIOTECADataSet.xsc">
+      <DependentUpon>BIBLIOTECADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIBLIOTECADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BIBLIOTECADataSet.xss">
+      <DependentUpon>BIBLIOTECADataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

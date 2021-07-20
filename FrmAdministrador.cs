@@ -32,7 +32,8 @@ namespace Proyecto_Biblioteca
 
         private void btn_Admi_Autor_Click(object sender, EventArgs e)
         {
-            FrmAutor frmAutor = new FrmAutor();
+            FrmAutorTable frmAutor = new FrmAutorTable();
+            frmAutor.ShowDialog();
         }
     }
 }

@@ -83,25 +83,26 @@ namespace Proyecto_Biblioteca
                 }
 
             }
+            sconexion.Close();
             return tipologin;
 
         }
-        /*public void Frm_Login_Admi(string usuario, string contrasena)
+        public void cargarDatos(DataGridView dgv)
         {
             try
             {
-                conexion.Open();
-                //SqlCommand cmd = new SqlCommand("SELECT USERNAME_ADMIN, PASSWORD_ADMIN FROM Administradores WHERE ");
-                //cmd.Parameters.AddWithValue
-                MessageBox.Show("Se abrio la conexion con el servidor SQL Server");
-                conexion.Close();
+                sconexion.Open();
+                SqlDataAdapter da = new SqlDataAdapter("Select * from Autores", conexion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource =dt;
+                sconexion.Close();
 
             }
-            catch
-            {
-                MessageBox.Show("No se creo la conexion con la base de datos");
-            }
-        }*/
+            catch(Exception ex) {
+                MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
+                    }
+        }
 
 
     }

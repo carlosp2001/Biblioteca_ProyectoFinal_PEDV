@@ -46,6 +46,7 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Edi.TabIndex = 7;
             this.btn_Admi_Edi.Text = "Editorial";
             this.btn_Admi_Edi.UseVisualStyleBackColor = true;
+            this.btn_Admi_Edi.Click += new System.EventHandler(this.btn_Admi_Edi_Click);
             // 
             // btn_Admi_Cat
             // 
@@ -56,6 +57,7 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Cat.TabIndex = 6;
             this.btn_Admi_Cat.Text = "Categoria";
             this.btn_Admi_Cat.UseVisualStyleBackColor = true;
+            this.btn_Admi_Cat.Click += new System.EventHandler(this.btn_Admi_Cat_Click);
             // 
             // btn_Admi_Autor
             // 
@@ -88,6 +90,7 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Libro.TabIndex = 8;
             this.btn_Admi_Libro.Text = "Libro";
             this.btn_Admi_Libro.UseVisualStyleBackColor = true;
+            this.btn_Admi_Libro.Click += new System.EventHandler(this.btn_Admi_Libro_Click);
             // 
             // btn_Admi_Lector
             // 

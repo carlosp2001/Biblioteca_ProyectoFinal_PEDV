@@ -87,12 +87,12 @@ namespace Proyecto_Biblioteca
             return tipologin;
 
         }
-        public void cargarDatos(DataGridView dgv)
+        public void cargarDatos(DataGridView dgv, string NameTable)
         {
             try
             {
                 sconexion.Open();
-                SqlDataAdapter da = new SqlDataAdapter("Select * from Autores", conexion);
+                SqlDataAdapter da = new SqlDataAdapter("Select * from "+NameTable, conexion);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dgv.DataSource =dt;
@@ -104,6 +104,22 @@ namespace Proyecto_Biblioteca
                     }
         }
 
+        public void cargarDatosLibros(DataGridView dgv)
+        {
+            try
+            {
+                sconexion.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT ID_LIBRO, TITULO_DEL_LIBRO, EDICION_DEL_LIBRO, NUMERO_DE_PAGINAS, NOMBRE_CATEGORIA, NOMBRE_EDITORIAL, NOMBRES_AUTOR+' '+APELLIDOS_AUTOR  FROM Libros,Categoria,Editorial,Autores WHERE Libros.ID_CATEGORIA = Categoria.ID_CATEGORIA AND Libros.ID_EDITORIAL = Editorial.ID_EDITORIAL AND Libros.ID_AUTOR = Autores.ID_AUTOR", conexion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+                sconexion.Close();
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
+            }
+        }
     }
 }

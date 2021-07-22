@@ -56,7 +56,7 @@ namespace Proyecto_Biblioteca
                     txt_Apellido_autor.Clear();
                     txt_Nacionalidad_autor.Clear();
                     this.txt_Id_autor.Focus();
-                    clsConexion1.cargarDatos(dgv_admi_cat);
+                    clsConexion1.cargarDatos(dgv_admi_cat, "Autores");
                 }
             }
             catch
@@ -101,7 +101,7 @@ namespace Proyecto_Biblioteca
                         txt_Apellido_autor.Clear();
                         txt_Nacionalidad_autor.Clear();
                         this.txt_Id_autor.Focus();
-                        clsConexion1.cargarDatos(dgv_admi_cat);
+                        clsConexion1.cargarDatos(dgv_admi_cat, "Autores");
 
                     }
 
@@ -158,7 +158,7 @@ namespace Proyecto_Biblioteca
                         txt_Apellido_autor.Clear();
                         txt_Nacionalidad_autor.Clear();
                         this.txt_Id_autor.Focus();
-                        clsConexion1.cargarDatos(dgv_admi_cat);
+                        clsConexion1.cargarDatos(dgv_admi_cat, "Autores");
 
                     }
 

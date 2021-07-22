@@ -35,5 +35,23 @@ namespace Proyecto_Biblioteca
             FrmAutorTable frmAutor = new FrmAutorTable();
             frmAutor.ShowDialog();
         }
+        FrmCategoria frmCategoria = new FrmCategoria();
+
+        private void btn_Admi_Cat_Click(object sender, EventArgs e)
+        {
+            frmCategoria.ShowDialog();
+            
+        }
+        FrmEditorial frmEditorial = new FrmEditorial();
+
+        private void btn_Admi_Edi_Click(object sender, EventArgs e)
+        {
+            frmEditorial.ShowDialog();
+        }
+        FrmLibro frmLibro = new FrmLibro();
+        private void btn_Admi_Libro_Click(object sender, EventArgs e)
+        {
+            frmLibro.ShowDialog();
+        }
     }
 }

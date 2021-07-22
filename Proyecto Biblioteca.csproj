@@ -51,6 +51,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BIBLIOTECADataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BIBLIOTECADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIBLIOTECADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BIBLIOTECADataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIBLIOTECADataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BIBLIOTECADataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIBLIOTECADataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BIBLIOTECADataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIBLIOTECADataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BIBLIOTECADataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIBLIOTECADataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="clsConexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -217,6 +242,61 @@
     </None>
     <None Include="BIBLIOTECADataSet.xss">
       <DependentUpon>BIBLIOTECADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet1.xsc">
+      <DependentUpon>BIBLIOTECADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIBLIOTECADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BIBLIOTECADataSet1.xss">
+      <DependentUpon>BIBLIOTECADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet2.xsc">
+      <DependentUpon>BIBLIOTECADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIBLIOTECADataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BIBLIOTECADataSet2.xss">
+      <DependentUpon>BIBLIOTECADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet3.xsc">
+      <DependentUpon>BIBLIOTECADataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIBLIOTECADataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BIBLIOTECADataSet3.xss">
+      <DependentUpon>BIBLIOTECADataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet4.xsc">
+      <DependentUpon>BIBLIOTECADataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIBLIOTECADataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BIBLIOTECADataSet4.xss">
+      <DependentUpon>BIBLIOTECADataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet5.xsc">
+      <DependentUpon>BIBLIOTECADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BIBLIOTECADataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIBLIOTECADataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BIBLIOTECADataSet5.xss">
+      <DependentUpon>BIBLIOTECADataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -32,7 +32,6 @@ namespace Proyecto_Biblioteca
             this.components = new System.ComponentModel.Container();
             this.btn_Modi_libro = new System.Windows.Forms.Button();
             this.btn_Agre_libro = new System.Windows.Forms.Button();
-            this.dgv_admi_libro = new System.Windows.Forms.DataGridView();
             this.txt_npaginas_libro = new System.Windows.Forms.TextBox();
             this.txt_edicion_libro = new System.Windows.Forms.TextBox();
             this.txt_titulo_libro = new System.Windows.Forms.TextBox();
@@ -48,37 +47,61 @@ namespace Proyecto_Biblioteca
             this.btn_Eliminar_Libros = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.bIBLIOTECADataSet4 = new Proyecto_Biblioteca.BIBLIOTECADataSet4();
+            this.editorialBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bIBLIOTECADataSet7 = new Proyecto_Biblioteca.BIBLIOTECADataSet7();
             this.editorialBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.editorialTableAdapter = new Proyecto_Biblioteca.BIBLIOTECADataSet4TableAdapters.EditorialTableAdapter();
-            this.bIBLIOTECADataSet5 = new Proyecto_Biblioteca.BIBLIOTECADataSet5();
+            this.bIBLIOTECADataSet4 = new Proyecto_Biblioteca.BIBLIOTECADataSet4();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.categoriaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bIBLIOTECADataSet8 = new Proyecto_Biblioteca.BIBLIOTECADataSet8();
             this.categoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bIBLIOTECADataSet5 = new Proyecto_Biblioteca.BIBLIOTECADataSet5();
+            this.label6 = new System.Windows.Forms.Label();
+            this.editorialTableAdapter = new Proyecto_Biblioteca.BIBLIOTECADataSet4TableAdapters.EditorialTableAdapter();
             this.categoriaTableAdapter = new Proyecto_Biblioteca.BIBLIOTECADataSet5TableAdapters.CategoriaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_admi_libro)).BeginInit();
+            this.autoresBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bIBLIOTECADataSet9 = new Proyecto_Biblioteca.BIBLIOTECADataSet9();
+            this.label7 = new System.Windows.Forms.Label();
+            this.bIBLIOTECADataSet6 = new Proyecto_Biblioteca.BIBLIOTECADataSet6();
+            this.autoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.autoresTableAdapter = new Proyecto_Biblioteca.BIBLIOTECADataSet6TableAdapters.AutoresTableAdapter();
+            this.editorialTableAdapter1 = new Proyecto_Biblioteca.BIBLIOTECADataSet7TableAdapters.EditorialTableAdapter();
+            this.categoriaTableAdapter1 = new Proyecto_Biblioteca.BIBLIOTECADataSet8TableAdapters.CategoriaTableAdapter();
+            this.autoresTableAdapter1 = new Proyecto_Biblioteca.BIBLIOTECADataSet9TableAdapters.AutoresTableAdapter();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.dgv_admi_libro = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.librosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editorialBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.editorialBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoresBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_admi_libro)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Modi_libro
             // 
             this.btn_Modi_libro.Location = new System.Drawing.Point(533, 236);
-            this.btn_Modi_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn_Modi_libro.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Modi_libro.Name = "btn_Modi_libro";
             this.btn_Modi_libro.Size = new System.Drawing.Size(62, 36);
             this.btn_Modi_libro.TabIndex = 42;
             this.btn_Modi_libro.Text = "Modificar";
             this.btn_Modi_libro.UseVisualStyleBackColor = true;
+            this.btn_Modi_libro.Click += new System.EventHandler(this.btn_Modi_libro_Click);
             // 
             // btn_Agre_libro
             // 
             this.btn_Agre_libro.Location = new System.Drawing.Point(533, 117);
-            this.btn_Agre_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btn_Agre_libro.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Agre_libro.Name = "btn_Agre_libro";
             this.btn_Agre_libro.Size = new System.Drawing.Size(62, 33);
             this.btn_Agre_libro.TabIndex = 41;
@@ -86,23 +109,10 @@ namespace Proyecto_Biblioteca
             this.btn_Agre_libro.UseVisualStyleBackColor = true;
             this.btn_Agre_libro.Click += new System.EventHandler(this.btn_Agre_libro_Click);
             // 
-            // dgv_admi_libro
-            // 
-            this.dgv_admi_libro.AllowUserToAddRows = false;
-            this.dgv_admi_libro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_admi_libro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_admi_libro.Location = new System.Drawing.Point(54, 330);
-            this.dgv_admi_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.dgv_admi_libro.Name = "dgv_admi_libro";
-            this.dgv_admi_libro.RowHeadersWidth = 40;
-            this.dgv_admi_libro.RowTemplate.Height = 46;
-            this.dgv_admi_libro.Size = new System.Drawing.Size(577, 79);
-            this.dgv_admi_libro.TabIndex = 40;
-            // 
             // txt_npaginas_libro
             // 
             this.txt_npaginas_libro.Location = new System.Drawing.Point(123, 263);
-            this.txt_npaginas_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_npaginas_libro.Margin = new System.Windows.Forms.Padding(1);
             this.txt_npaginas_libro.Name = "txt_npaginas_libro";
             this.txt_npaginas_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_npaginas_libro.TabIndex = 39;
@@ -110,7 +120,7 @@ namespace Proyecto_Biblioteca
             // txt_edicion_libro
             // 
             this.txt_edicion_libro.Location = new System.Drawing.Point(123, 216);
-            this.txt_edicion_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_edicion_libro.Margin = new System.Windows.Forms.Padding(1);
             this.txt_edicion_libro.Name = "txt_edicion_libro";
             this.txt_edicion_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_edicion_libro.TabIndex = 38;
@@ -118,7 +128,7 @@ namespace Proyecto_Biblioteca
             // txt_titulo_libro
             // 
             this.txt_titulo_libro.Location = new System.Drawing.Point(123, 167);
-            this.txt_titulo_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_titulo_libro.Margin = new System.Windows.Forms.Padding(1);
             this.txt_titulo_libro.Name = "txt_titulo_libro";
             this.txt_titulo_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_titulo_libro.TabIndex = 37;
@@ -126,7 +136,7 @@ namespace Proyecto_Biblioteca
             // txt_Id_libro
             // 
             this.txt_Id_libro.Location = new System.Drawing.Point(123, 119);
-            this.txt_Id_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txt_Id_libro.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Id_libro.Name = "txt_Id_libro";
             this.txt_Id_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_Id_libro.TabIndex = 36;
@@ -205,6 +215,7 @@ namespace Proyecto_Biblioteca
             this.btn_Eliminar_Libros.TabIndex = 43;
             this.btn_Eliminar_Libros.Text = "Eliminar";
             this.btn_Eliminar_Libros.UseVisualStyleBackColor = true;
+            this.btn_Eliminar_Libros.Click += new System.EventHandler(this.btn_Eliminar_Libros_Click);
             // 
             // label5
             // 
@@ -218,29 +229,69 @@ namespace Proyecto_Biblioteca
             // 
             // comboBox1
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.editorialBindingSource, "NOMBRE_EDITORIAL", true));
-            this.comboBox1.DataSource = this.editorialBindingSource;
+            this.comboBox1.DataSource = this.editorialBindingSource1;
             this.comboBox1.DisplayMember = "NOMBRE_EDITORIAL";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(310, 116);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 45;
-            this.comboBox1.ValueMember = "NOMBRE_EDITORIAL";
+            this.comboBox1.ValueMember = "ID_EDITORIAL";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // editorialBindingSource1
+            // 
+            this.editorialBindingSource1.AllowNew = true;
+            this.editorialBindingSource1.DataMember = "Editorial";
+            this.editorialBindingSource1.DataSource = this.bIBLIOTECADataSet7;
+            // 
+            // bIBLIOTECADataSet7
+            // 
+            this.bIBLIOTECADataSet7.DataSetName = "BIBLIOTECADataSet7";
+            this.bIBLIOTECADataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // editorialBindingSource
+            // 
+            this.editorialBindingSource.DataMember = "Editorial";
+            this.editorialBindingSource.DataSource = this.bIBLIOTECADataSet4;
+            // 
+            // bIBLIOTECADataSet4
+            // 
+            this.bIBLIOTECADataSet4.DataSetName = "BIBLIOTECADataSet4";
+            this.bIBLIOTECADataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox2
             // 
-            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriaBindingSource, "NOMBRE_CATEGORIA", true));
-            this.comboBox2.DataSource = this.categoriaBindingSource;
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriaBindingSource1, "ID_CATEGORIA", true));
+            this.comboBox2.DataSource = this.categoriaBindingSource1;
             this.comboBox2.DisplayMember = "NOMBRE_CATEGORIA";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(310, 167);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 47;
-            this.comboBox2.ValueMember = "NOMBRE_CATEGORIA";
+            this.comboBox2.ValueMember = "ID_CATEGORIA";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // categoriaBindingSource1
+            // 
+            this.categoriaBindingSource1.DataMember = "Categoria";
+            this.categoriaBindingSource1.DataSource = this.bIBLIOTECADataSet8;
+            // 
+            // bIBLIOTECADataSet8
+            // 
+            this.bIBLIOTECADataSet8.DataSetName = "BIBLIOTECADataSet8";
+            this.bIBLIOTECADataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoriaBindingSource
+            // 
+            this.categoriaBindingSource.DataMember = "Categoria";
+            this.categoriaBindingSource.DataSource = this.bIBLIOTECADataSet5;
+            // 
+            // bIBLIOTECADataSet5
+            // 
+            this.bIBLIOTECADataSet5.DataSetName = "BIBLIOTECADataSet5";
+            this.bIBLIOTECADataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -252,39 +303,91 @@ namespace Proyecto_Biblioteca
             this.label6.TabIndex = 46;
             this.label6.Text = "Categoria:";
             // 
-            // bIBLIOTECADataSet4
-            // 
-            this.bIBLIOTECADataSet4.DataSetName = "BIBLIOTECADataSet4";
-            this.bIBLIOTECADataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // editorialBindingSource
-            // 
-            this.editorialBindingSource.DataMember = "Editorial";
-            this.editorialBindingSource.DataSource = this.bIBLIOTECADataSet4;
-            // 
             // editorialTableAdapter
             // 
             this.editorialTableAdapter.ClearBeforeFill = true;
             // 
-            // bIBLIOTECADataSet5
-            // 
-            this.bIBLIOTECADataSet5.DataSetName = "BIBLIOTECADataSet5";
-            this.bIBLIOTECADataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // categoriaBindingSource
-            // 
-            this.categoriaBindingSource.DataMember = "Categoria";
-            this.categoriaBindingSource.DataSource = this.bIBLIOTECADataSet5;
-            // 
             // categoriaTableAdapter
             // 
             this.categoriaTableAdapter.ClearBeforeFill = true;
+            // 
+            // autoresBindingSource1
+            // 
+            this.autoresBindingSource1.DataMember = "Autores";
+            this.autoresBindingSource1.DataSource = this.bIBLIOTECADataSet9;
+            // 
+            // bIBLIOTECADataSet9
+            // 
+            this.bIBLIOTECADataSet9.DataSetName = "BIBLIOTECADataSet9";
+            this.bIBLIOTECADataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(259, 216);
+            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "Autor:";
+            // 
+            // bIBLIOTECADataSet6
+            // 
+            this.bIBLIOTECADataSet6.DataSetName = "BIBLIOTECADataSet6";
+            this.bIBLIOTECADataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // autoresBindingSource
+            // 
+            this.autoresBindingSource.DataMember = "Autores";
+            this.autoresBindingSource.DataSource = this.bIBLIOTECADataSet6;
+            // 
+            // autoresTableAdapter
+            // 
+            this.autoresTableAdapter.ClearBeforeFill = true;
+            // 
+            // editorialTableAdapter1
+            // 
+            this.editorialTableAdapter1.ClearBeforeFill = true;
+            // 
+            // categoriaTableAdapter1
+            // 
+            this.categoriaTableAdapter1.ClearBeforeFill = true;
+            // 
+            // autoresTableAdapter1
+            // 
+            this.autoresTableAdapter1.ClearBeforeFill = true;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.autoresBindingSource1, "ID_AUTOR", true));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(310, 214);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 49;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_2);
+            // 
+            // dgv_admi_libro
+            // 
+            this.dgv_admi_libro.AllowUserToAddRows = false;
+            this.dgv_admi_libro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_admi_libro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_admi_libro.Location = new System.Drawing.Point(54, 298);
+            this.dgv_admi_libro.Margin = new System.Windows.Forms.Padding(1);
+            this.dgv_admi_libro.Name = "dgv_admi_libro";
+            this.dgv_admi_libro.RowHeadersWidth = 40;
+            this.dgv_admi_libro.RowTemplate.Height = 46;
+            this.dgv_admi_libro.Size = new System.Drawing.Size(577, 140);
+            this.dgv_admi_libro.TabIndex = 40;
+            this.dgv_admi_libro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_admi_libro_CellClick);
             // 
             // FrmLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 448);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
@@ -302,17 +405,25 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FrmLibro";
             this.Text = "LIBRO ";
             this.Load += new System.EventHandler(this.FrmLibro_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_admi_libro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.librosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editorialBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.editorialBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoresBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_admi_libro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,7 +433,6 @@ namespace Proyecto_Biblioteca
 
         private System.Windows.Forms.Button btn_Modi_libro;
         private System.Windows.Forms.Button btn_Agre_libro;
-        private System.Windows.Forms.DataGridView dgv_admi_libro;
         private System.Windows.Forms.TextBox txt_npaginas_libro;
         private System.Windows.Forms.TextBox txt_edicion_libro;
         private System.Windows.Forms.TextBox txt_titulo_libro;
@@ -346,5 +456,21 @@ namespace Proyecto_Biblioteca
         private BIBLIOTECADataSet5 bIBLIOTECADataSet5;
         private System.Windows.Forms.BindingSource categoriaBindingSource;
         private BIBLIOTECADataSet5TableAdapters.CategoriaTableAdapter categoriaTableAdapter;
+        private System.Windows.Forms.Label label7;
+        private BIBLIOTECADataSet6 bIBLIOTECADataSet6;
+        private System.Windows.Forms.BindingSource autoresBindingSource;
+        private BIBLIOTECADataSet6TableAdapters.AutoresTableAdapter autoresTableAdapter;
+        private BIBLIOTECADataSet7 bIBLIOTECADataSet7;
+        private System.Windows.Forms.BindingSource editorialBindingSource1;
+        private BIBLIOTECADataSet7TableAdapters.EditorialTableAdapter editorialTableAdapter1;
+        private BIBLIOTECADataSet8 bIBLIOTECADataSet8;
+        private System.Windows.Forms.BindingSource categoriaBindingSource1;
+        private BIBLIOTECADataSet8TableAdapters.CategoriaTableAdapter categoriaTableAdapter1;
+        private BIBLIOTECADataSet9 bIBLIOTECADataSet9;
+        private System.Windows.Forms.BindingSource autoresBindingSource1;
+        private BIBLIOTECADataSet9TableAdapters.AutoresTableAdapter autoresTableAdapter1;
+        private BIBLIOTECADataSet10 bIBLIOTECADataSet10;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DataGridView dgv_admi_libro;
     }
 }

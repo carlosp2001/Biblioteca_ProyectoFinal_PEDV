@@ -16,7 +16,7 @@ namespace Proyecto_Biblioteca
         {
             InitializeComponent();
         }
-        Frm_Login_Empleado frm_Login_Empleado = new Frm_Login_Empleado();
+         Frm_Login_Empleado frm_Login_Empleado = new Frm_Login_Empleado();
 
         private void FrmAdministrador_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -52,6 +52,18 @@ namespace Proyecto_Biblioteca
         private void btn_Admi_Libro_Click(object sender, EventArgs e)
         {
             frmLibro.ShowDialog();
+        }
+
+        protected FrmLector frmLector = new FrmLector("Administrador");
+        private void btn_Admi_Lector_Click(object sender, EventArgs e)
+        {
+            frmLector.ShowDialog();
+
+        }
+
+        private void FrmAdministrador_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

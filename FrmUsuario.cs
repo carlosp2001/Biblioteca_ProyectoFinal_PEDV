@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Proyecto_Biblioteca
 {
-    public partial class FrmUsuario : Form
+    public partial class FrmUsuario : FrmAdministrador
     {
         public FrmUsuario()
         {
@@ -26,5 +26,16 @@ namespace Proyecto_Biblioteca
         {
 
         }
+        FrmLector frmLector1 = new FrmLector("Empleado");
+        private void btn_Empleado_Click(object sender, EventArgs e)
+        {
+
+            frmLector.ShowDialog();
+                       
+            
+            
+        }
+
+        
     }
 }

@@ -87,6 +87,8 @@ namespace Proyecto_Biblioteca
             return tipologin;
 
         }
+
+        //Polimorfismo
         public void cargarDatos(DataGridView dgv, string NameTable)
         {
             try
@@ -104,7 +106,8 @@ namespace Proyecto_Biblioteca
                     }
         }
 
-        public void cargarDatosLibros(DataGridView dgv)
+        //Poliformismo
+        public void cargarDatos(DataGridView dgv)
         {
             try
             {
@@ -121,8 +124,25 @@ namespace Proyecto_Biblioteca
                 MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
             }
         }
+        public void cargarDatosUsuarios(DataGridView dgv)
+        {
+            try
+            {
+                sconexion.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT ID_ADMIN, USERNAME_ADMIN, PASSWORD_ADMIN, NOMBRE_TIPO FROM Administradores,Tipo_de_Usuario WHERE Administradores.ID_TIPO=Tipo_de_Usuario.ID_Tipo UNION SELECT ID_USUARIO, USERNAME_USUARIO, PASSWORD_USUARIO, NOMBRE_TIPO FROM Usuarios, Tipo_de_Usuario WHERE Usuarios.ID_TIPO=Tipo_de_Usuario.ID_Tipo", conexion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+                sconexion.Close();
 
-        public void cargarDatoscombobox(ComboBox cmb1)
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
+            }
+        }
+
+        public void cargarDatoscomboboxAutor(ComboBox cmb1)
         {
             
             sconexion.Open();
@@ -139,6 +159,72 @@ namespace Proyecto_Biblioteca
             cmb1.DisplayMember = "NOMBRES_AUTOR";
             cmb1.DataSource = dt;
                 
+        }
+        public void cargarDatoscomboboxCategoria(ComboBox cmb1)
+        {
+
+            sconexion.Open();
+            SqlCommand cmd = new SqlCommand("Select ID_CATEGORIA, NOMBRE_CATEGORIA FROM Categoria", sconexion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            sconexion.Close();
+            cmb1.DisplayMember = "NOMBRE_CATEGORIA";
+            cmb1.ValueMember = "ID_CATEGORIA";
+            DataRow fila = dt.NewRow();
+            dt.Rows.InsertAt(fila, 0);
+            cmb1.ValueMember = "ID_CATEGORIA";
+            cmb1.DisplayMember = "NOMBRE_CATEGORIA";
+            cmb1.DataSource = dt;
+
+        }
+
+        public void cargarDatoscomboboxEditorial(ComboBox cmb1)
+        {
+
+            sconexion.Open();
+            SqlCommand cmd = new SqlCommand("Select ID_EDITORIAL, NOMBRE_EDITORIAL FROM Editorial", sconexion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            sconexion.Close();
+            cmb1.DisplayMember = "NOMBRE_EDITORIAL";
+            cmb1.ValueMember = "ID_EDITORIAL";
+            cmb1.DataSource = dt;
+
+        }
+
+        public void cargarDatoscomboboxTiposdeUsuarios(ComboBox cmb1)
+        {
+
+            sconexion.Open();
+            SqlCommand cmd = new SqlCommand("Select ID_TIPO, NOMBRE_TIPO FROM Tipo_de_Usuario", sconexion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            sconexion.Close();
+            cmb1.DisplayMember = "NOMBRE_TIPO";
+            cmb1.ValueMember = "ID_TIPO";
+            cmb1.DataSource = dt;
+
+        }
+
+        public void cargarDatosUsuarioLector(DataGridView dgv)
+        {
+            try
+            {
+                sconexion.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT DNI_USUARIO, NOMBRE, TELEFONO, DIRECCION, FECHA_NACIMIENTO  FROM Usuario_Lector", conexion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+                sconexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
+            }
         }
     }
 }

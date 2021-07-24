@@ -229,14 +229,11 @@ namespace Proyecto_Biblioteca
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.editorialBindingSource1;
-            this.comboBox1.DisplayMember = "NOMBRE_EDITORIAL";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(310, 116);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 45;
-            this.comboBox1.ValueMember = "ID_EDITORIAL";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // editorialBindingSource1
@@ -263,14 +260,11 @@ namespace Proyecto_Biblioteca
             // comboBox2
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriaBindingSource1, "ID_CATEGORIA", true));
-            this.comboBox2.DataSource = this.categoriaBindingSource1;
-            this.comboBox2.DisplayMember = "NOMBRE_CATEGORIA";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(310, 167);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 47;
-            this.comboBox2.ValueMember = "ID_CATEGORIA";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // categoriaBindingSource1
@@ -408,6 +402,7 @@ namespace Proyecto_Biblioteca
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FrmLibro";
             this.Text = "LIBRO ";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmLibro_FormClosed);
             this.Load += new System.EventHandler(this.FrmLibro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bIBLIOTECADataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.librosBindingSource)).EndInit();

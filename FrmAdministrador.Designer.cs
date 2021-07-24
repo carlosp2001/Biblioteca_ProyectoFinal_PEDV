@@ -101,6 +101,7 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Lector.TabIndex = 9;
             this.btn_Admi_Lector.Text = "Lector";
             this.btn_Admi_Lector.UseVisualStyleBackColor = true;
+            this.btn_Admi_Lector.Click += new System.EventHandler(this.btn_Admi_Lector_Click);
             // 
             // FrmAdministrador
             // 
@@ -117,6 +118,7 @@ namespace Proyecto_Biblioteca
             this.Name = "FrmAdministrador";
             this.Text = "Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAdministrador_FormClosed);
+            this.Load += new System.EventHandler(this.FrmAdministrador_Load);
             this.ResumeLayout(false);
 
         }

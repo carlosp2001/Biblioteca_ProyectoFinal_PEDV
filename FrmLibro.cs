@@ -21,14 +21,17 @@ namespace Proyecto_Biblioteca
         private void FrmLibro_Load(object sender, EventArgs e)
         {
             clsConexion clsConexion1 = new clsConexion();
-            clsConexion1.cargarDatosLibros(dgv_admi_libro);
+            clsConexion1.cargarDatos(dgv_admi_libro);
+            clsConexion1.cargarDatoscomboboxAutor(comboBox3);
+            clsConexion1.cargarDatoscomboboxEditorial(comboBox1);
+            clsConexion1.cargarDatoscomboboxCategoria(comboBox2);
+            
 
-            
-            
+
             // TODO: This line of code loads data into the 'bIBLIOTECADataSet10.Autores' table. You can move, or remove it, as needed.
-            clsConexion clsconexion1 = new clsConexion();
-            
-            clsconexion1.cargarDatoscombobox(comboBox3);
+
+
+
             // TODO: This line of code loads data into the 'bIBLIOTECADataSet9.Autores' table. You can move, or remove it, as needed.
             this.autoresTableAdapter1.Fill(this.bIBLIOTECADataSet9.Autores);
             // TODO: This line of code loads data into the 'bIBLIOTECADataSet8.Categoria' table. You can move, or remove it, as needed.
@@ -85,7 +88,7 @@ namespace Proyecto_Biblioteca
                     this.txt_Id_libro.Focus();
                   
                     clsConexion clsConexion1 = new clsConexion();
-                    clsConexion1.cargarDatosLibros(dgv_admi_libro);
+                    clsConexion1.cargarDatos(dgv_admi_libro);
                 }
             }
             catch
@@ -106,7 +109,7 @@ namespace Proyecto_Biblioteca
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             codigoCategoria = comboBox2.SelectedValue.ToString();
-            
+
 
         }
         String codigoAutor;
@@ -159,7 +162,7 @@ namespace Proyecto_Biblioteca
                     this.txt_Id_libro.Focus();
 
                     clsConexion clsConexion1 = new clsConexion();
-                    clsConexion1.cargarDatosLibros(dgv_admi_libro);
+                    clsConexion1.cargarDatos(dgv_admi_libro);
 
 
 
@@ -196,6 +199,9 @@ namespace Proyecto_Biblioteca
                 }
                 else
                 {
+                    codigoCategoria = comboBox2.SelectedValue.ToString();
+                    codigoEditorial = comboBox1.SelectedValue.ToString();
+                    codigoAutor = comboBox3.SelectedValue.ToString();
                     string conexion1 = "Data Source= Windows10\\SQLEXPRESS; Initial Catalog=BIBLIOTECA ;Integrated Security=True";
                     SqlConnection sconexion1 = new SqlConnection();
                     sconexion1.ConnectionString = conexion1;
@@ -219,13 +225,18 @@ namespace Proyecto_Biblioteca
                     this.txt_Id_libro.Focus();
 
                     clsConexion clsConexion1 = new clsConexion();
-                    clsConexion1.cargarDatosLibros(dgv_admi_libro);
+                    clsConexion1.cargarDatos(dgv_admi_libro);
                 }
             }
             catch
             {
                 MessageBox.Show("Error...El codigo ya existe en la base de datos");
             }
+        }
+
+        private void FrmLibro_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

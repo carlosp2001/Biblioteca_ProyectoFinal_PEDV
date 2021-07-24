@@ -28,5 +28,27 @@ namespace Proyecto_Biblioteca
             Frm_Login_Empleado frm_Login_Empleado = new Frm_Login_Empleado();
             frm_Login_Empleado.Show();
         }
+
+        FrmLector frmLector1 = new FrmLector("Empleado");
+
+        private void btn_Emple_AgreLect_Click(object sender, EventArgs e)
+        {
+            frmLector1.ShowDialog();
+        }
+
+        FrmRealizarP frmRealizarP = new FrmRealizarP("Realizar");
+
+        private void btn_Emple_Presta_Click(object sender, EventArgs e)
+        {
+            frmRealizarP.ShowDialog();
+
+        }
+
+        FrmRealizarP frmRealizar = new FrmRealizarP("Entrega");
+        private void btn_Emple_EntreLib_Click(object sender, EventArgs e)
+        {
+            frmRealizar.ShowDialog();
+
+        }
     }
 }

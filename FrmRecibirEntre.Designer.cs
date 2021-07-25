@@ -29,6 +29,7 @@ namespace Proyecto_Biblioteca
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRecibirEntre));
             this.txt_Nombre_RecibirLib = new System.Windows.Forms.TextBox();
             this.txt_ID_RecibirLib = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,7 +51,7 @@ namespace Proyecto_Biblioteca
             // 
             this.txt_Nombre_RecibirLib.Location = new System.Drawing.Point(410, 422);
             this.txt_Nombre_RecibirLib.Name = "txt_Nombre_RecibirLib";
-            this.txt_Nombre_RecibirLib.Size = new System.Drawing.Size(100, 44);
+            this.txt_Nombre_RecibirLib.Size = new System.Drawing.Size(348, 44);
             this.txt_Nombre_RecibirLib.TabIndex = 15;
             // 
             // txt_ID_RecibirLib
@@ -71,7 +72,7 @@ namespace Proyecto_Biblioteca
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(181, 609);
+            this.groupBox1.Location = new System.Drawing.Point(250, 621);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1353, 388);
             this.groupBox1.TabIndex = 13;
@@ -153,28 +154,33 @@ namespace Proyecto_Biblioteca
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(211, 430);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 37);
+            this.label3.Size = new System.Drawing.Size(158, 37);
             this.label3.TabIndex = 12;
             this.label3.Text = "Nombre: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Silver;
             this.label2.Location = new System.Drawing.Point(204, 309);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 37);
+            this.label2.Size = new System.Drawing.Size(165, 37);
             this.label2.TabIndex = 11;
             this.label2.Text = "ID Lector:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Adobe Gothic Std B", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(767, 88);
+            this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(684, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 70);
+            this.label1.Size = new System.Drawing.Size(692, 98);
             this.label1.TabIndex = 10;
             this.label1.Text = "Recibir Libro";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -183,6 +189,7 @@ namespace Proyecto_Biblioteca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(2063, 1251);
             this.Controls.Add(this.txt_Nombre_RecibirLib);
             this.Controls.Add(this.txt_ID_RecibirLib);
@@ -190,7 +197,10 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRecibirEntre";
+            this.Opacity = 0.95D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ENTREGA";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

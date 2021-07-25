@@ -29,6 +29,7 @@ namespace Proyecto_Biblioteca
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdministrador));
             this.btn_Admi_Edi = new System.Windows.Forms.Button();
             this.btn_Admi_Cat = new System.Windows.Forms.Button();
             this.btn_Admi_Autor = new System.Windows.Forms.Button();
@@ -39,10 +40,12 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Admi_Edi
             // 
-            this.btn_Admi_Edi.Location = new System.Drawing.Point(138, 220);
-            this.btn_Admi_Edi.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Admi_Edi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_Admi_Edi.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Edi.Image")));
+            this.btn_Admi_Edi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Admi_Edi.Location = new System.Drawing.Point(437, 576);
             this.btn_Admi_Edi.Name = "btn_Admi_Edi";
-            this.btn_Admi_Edi.Size = new System.Drawing.Size(172, 30);
+            this.btn_Admi_Edi.Size = new System.Drawing.Size(636, 135);
             this.btn_Admi_Edi.TabIndex = 7;
             this.btn_Admi_Edi.Text = "Editorial";
             this.btn_Admi_Edi.UseVisualStyleBackColor = true;
@@ -50,10 +53,12 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Admi_Cat
             // 
-            this.btn_Admi_Cat.Location = new System.Drawing.Point(138, 164);
-            this.btn_Admi_Cat.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Admi_Cat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_Admi_Cat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Cat.Image")));
+            this.btn_Admi_Cat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Admi_Cat.Location = new System.Drawing.Point(437, 417);
             this.btn_Admi_Cat.Name = "btn_Admi_Cat";
-            this.btn_Admi_Cat.Size = new System.Drawing.Size(172, 30);
+            this.btn_Admi_Cat.Size = new System.Drawing.Size(636, 135);
             this.btn_Admi_Cat.TabIndex = 6;
             this.btn_Admi_Cat.Text = "Categoria";
             this.btn_Admi_Cat.UseVisualStyleBackColor = true;
@@ -61,10 +66,12 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Admi_Autor
             // 
-            this.btn_Admi_Autor.Location = new System.Drawing.Point(138, 106);
-            this.btn_Admi_Autor.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Admi_Autor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_Admi_Autor.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Autor.Image")));
+            this.btn_Admi_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Admi_Autor.Location = new System.Drawing.Point(437, 252);
             this.btn_Admi_Autor.Name = "btn_Admi_Autor";
-            this.btn_Admi_Autor.Size = new System.Drawing.Size(172, 30);
+            this.btn_Admi_Autor.Size = new System.Drawing.Size(636, 135);
             this.btn_Admi_Autor.TabIndex = 5;
             this.btn_Admi_Autor.Text = "Autor";
             this.btn_Admi_Autor.UseVisualStyleBackColor = true;
@@ -72,10 +79,12 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Admi_UsuarioSist
             // 
-            this.btn_Admi_UsuarioSist.Location = new System.Drawing.Point(138, 50);
-            this.btn_Admi_UsuarioSist.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Admi_UsuarioSist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_Admi_UsuarioSist.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_UsuarioSist.Image")));
+            this.btn_Admi_UsuarioSist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Admi_UsuarioSist.Location = new System.Drawing.Point(437, 92);
             this.btn_Admi_UsuarioSist.Name = "btn_Admi_UsuarioSist";
-            this.btn_Admi_UsuarioSist.Size = new System.Drawing.Size(172, 30);
+            this.btn_Admi_UsuarioSist.Size = new System.Drawing.Size(636, 135);
             this.btn_Admi_UsuarioSist.TabIndex = 4;
             this.btn_Admi_UsuarioSist.Text = "Usuario Sistema";
             this.btn_Admi_UsuarioSist.UseVisualStyleBackColor = true;
@@ -83,10 +92,12 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Admi_Libro
             // 
-            this.btn_Admi_Libro.Location = new System.Drawing.Point(138, 274);
-            this.btn_Admi_Libro.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Admi_Libro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_Admi_Libro.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Libro.Image")));
+            this.btn_Admi_Libro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Admi_Libro.Location = new System.Drawing.Point(437, 755);
             this.btn_Admi_Libro.Name = "btn_Admi_Libro";
-            this.btn_Admi_Libro.Size = new System.Drawing.Size(172, 30);
+            this.btn_Admi_Libro.Size = new System.Drawing.Size(636, 139);
             this.btn_Admi_Libro.TabIndex = 8;
             this.btn_Admi_Libro.Text = "Libro";
             this.btn_Admi_Libro.UseVisualStyleBackColor = true;
@@ -94,10 +105,12 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Admi_Lector
             // 
-            this.btn_Admi_Lector.Location = new System.Drawing.Point(138, 331);
-            this.btn_Admi_Lector.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Admi_Lector.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_Admi_Lector.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Lector.Image")));
+            this.btn_Admi_Lector.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Admi_Lector.Location = new System.Drawing.Point(437, 952);
             this.btn_Admi_Lector.Name = "btn_Admi_Lector";
-            this.btn_Admi_Lector.Size = new System.Drawing.Size(172, 30);
+            this.btn_Admi_Lector.Size = new System.Drawing.Size(636, 131);
             this.btn_Admi_Lector.TabIndex = 9;
             this.btn_Admi_Lector.Text = "Lector";
             this.btn_Admi_Lector.UseVisualStyleBackColor = true;
@@ -105,17 +118,20 @@ namespace Proyecto_Biblioteca
             // 
             // FrmAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 400);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
+            this.ClientSize = new System.Drawing.Size(1477, 1179);
             this.Controls.Add(this.btn_Admi_Lector);
             this.Controls.Add(this.btn_Admi_Libro);
             this.Controls.Add(this.btn_Admi_Edi);
             this.Controls.Add(this.btn_Admi_Cat);
             this.Controls.Add(this.btn_Admi_Autor);
             this.Controls.Add(this.btn_Admi_UsuarioSist);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAdministrador";
+            this.Opacity = 0.95D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAdministrador_FormClosed);
             this.Load += new System.EventHandler(this.FrmAdministrador_Load);

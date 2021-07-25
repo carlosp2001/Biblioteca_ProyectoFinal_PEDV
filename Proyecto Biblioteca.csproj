@@ -123,12 +123,6 @@
     <Compile Include="FrmAdministrador.Designer.cs">
       <DependentUpon>FrmAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAutorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAutorForm.Designer.cs">
-      <DependentUpon>FrmAutorForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmAutorTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,23 +183,11 @@
     <Compile Include="FrmRecibirEntre.Designer.cs">
       <DependentUpon>FrmRecibirEntre.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmUsuario.Designer.cs">
-      <DependentUpon>FrmUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_Admi_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Admi_Usuario.Designer.cs">
       <DependentUpon>Frm_Admi_Usuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Login_Admi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Login_Admi.Designer.cs">
-      <DependentUpon>Frm_Login_Admi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -217,9 +199,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdministrador.resx">
       <DependentUpon>FrmAdministrador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAutorForm.resx">
-      <DependentUpon>FrmAutorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutorTable.resx">
       <DependentUpon>FrmAutorTable.cs</DependentUpon>
@@ -251,14 +230,8 @@
     <EmbeddedResource Include="FrmRecibirEntre.resx">
       <DependentUpon>FrmRecibirEntre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuario.resx">
-      <DependentUpon>FrmUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Admi_Usuario.resx">
       <DependentUpon>Frm_Admi_Usuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Login_Admi.resx">
-      <DependentUpon>Frm_Login_Admi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

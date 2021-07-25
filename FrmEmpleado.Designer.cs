@@ -29,6 +29,7 @@ namespace Proyecto_Biblioteca
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpleado));
             this.btn_Emple_AgreLect = new System.Windows.Forms.Button();
             this.btn_Emple_Presta = new System.Windows.Forms.Button();
             this.btn_Emple_EntreLib = new System.Windows.Forms.Button();
@@ -37,10 +38,11 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Emple_AgreLect
             // 
-            this.btn_Emple_AgreLect.Location = new System.Drawing.Point(169, 59);
-            this.btn_Emple_AgreLect.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Emple_AgreLect.Image = ((System.Drawing.Image)(resources.GetObject("btn_Emple_AgreLect.Image")));
+            this.btn_Emple_AgreLect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Emple_AgreLect.Location = new System.Drawing.Point(439, 166);
             this.btn_Emple_AgreLect.Name = "btn_Emple_AgreLect";
-            this.btn_Emple_AgreLect.Size = new System.Drawing.Size(172, 41);
+            this.btn_Emple_AgreLect.Size = new System.Drawing.Size(665, 135);
             this.btn_Emple_AgreLect.TabIndex = 0;
             this.btn_Emple_AgreLect.Text = "Agregar Un Nuevo Lector";
             this.btn_Emple_AgreLect.UseVisualStyleBackColor = true;
@@ -48,10 +50,11 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Emple_Presta
             // 
-            this.btn_Emple_Presta.Location = new System.Drawing.Point(169, 129);
-            this.btn_Emple_Presta.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Emple_Presta.Image = ((System.Drawing.Image)(resources.GetObject("btn_Emple_Presta.Image")));
+            this.btn_Emple_Presta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Emple_Presta.Location = new System.Drawing.Point(439, 365);
             this.btn_Emple_Presta.Name = "btn_Emple_Presta";
-            this.btn_Emple_Presta.Size = new System.Drawing.Size(172, 41);
+            this.btn_Emple_Presta.Size = new System.Drawing.Size(665, 135);
             this.btn_Emple_Presta.TabIndex = 1;
             this.btn_Emple_Presta.Text = "Realizar Prestamo";
             this.btn_Emple_Presta.UseVisualStyleBackColor = true;
@@ -59,10 +62,11 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Emple_EntreLib
             // 
-            this.btn_Emple_EntreLib.Location = new System.Drawing.Point(169, 208);
-            this.btn_Emple_EntreLib.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Emple_EntreLib.Image = ((System.Drawing.Image)(resources.GetObject("btn_Emple_EntreLib.Image")));
+            this.btn_Emple_EntreLib.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Emple_EntreLib.Location = new System.Drawing.Point(439, 590);
             this.btn_Emple_EntreLib.Name = "btn_Emple_EntreLib";
-            this.btn_Emple_EntreLib.Size = new System.Drawing.Size(172, 41);
+            this.btn_Emple_EntreLib.Size = new System.Drawing.Size(665, 135);
             this.btn_Emple_EntreLib.TabIndex = 2;
             this.btn_Emple_EntreLib.Text = "Recibir Entrega De Libro";
             this.btn_Emple_EntreLib.UseVisualStyleBackColor = true;
@@ -70,10 +74,11 @@ namespace Proyecto_Biblioteca
             // 
             // btn_Emple_Fact
             // 
-            this.btn_Emple_Fact.Location = new System.Drawing.Point(169, 283);
-            this.btn_Emple_Fact.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_Emple_Fact.Image = ((System.Drawing.Image)(resources.GetObject("btn_Emple_Fact.Image")));
+            this.btn_Emple_Fact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Emple_Fact.Location = new System.Drawing.Point(439, 803);
             this.btn_Emple_Fact.Name = "btn_Emple_Fact";
-            this.btn_Emple_Fact.Size = new System.Drawing.Size(172, 41);
+            this.btn_Emple_Fact.Size = new System.Drawing.Size(665, 135);
             this.btn_Emple_Fact.TabIndex = 3;
             this.btn_Emple_Fact.Text = "Realizar Factura";
             this.btn_Emple_Fact.UseVisualStyleBackColor = true;
@@ -81,15 +86,19 @@ namespace Proyecto_Biblioteca
             // 
             // FrmEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 379);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
+            this.ClientSize = new System.Drawing.Size(1523, 1079);
             this.Controls.Add(this.btn_Emple_Fact);
             this.Controls.Add(this.btn_Emple_EntreLib);
             this.Controls.Add(this.btn_Emple_Presta);
             this.Controls.Add(this.btn_Emple_AgreLect);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEmpleado";
+            this.Opacity = 0.95D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EMPLEADO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEmpleado_FormClosed);
             this.Load += new System.EventHandler(this.FrmEmpleado_Load);

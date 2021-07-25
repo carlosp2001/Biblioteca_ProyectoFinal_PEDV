@@ -20,6 +20,7 @@ namespace Proyecto_Biblioteca
 
         private void FrmEditorial_Load(object sender, EventArgs e)
         {
+            txt_Id_editorial.Enabled = false;
             // TODO: This line of code loads data into the 'bIBLIOTECADataSet2.Editorial' table. You can move, or remove it, as needed.
             this.editorialTableAdapter.Fill(this.bIBLIOTECADataSet2.Editorial);
 

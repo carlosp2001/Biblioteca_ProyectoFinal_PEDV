@@ -23,6 +23,7 @@ namespace Proyecto_Biblioteca
             clsConexion clsConexion1 = new clsConexion();
             clsConexion1.cargarDatosUsuarios(dataGridView1);
             clsConexion1.cargarDatoscomboboxTiposdeUsuarios(comboBox1);
+            txt_Id_UsuarioSist.Enabled = false;
         }
 
         int i;
@@ -67,8 +68,11 @@ namespace Proyecto_Biblioteca
                         agregar.ExecuteNonQuery();
                         sconexion1.Close();
                     }
-                    
 
+                    txt_Id_UsuarioSist.Clear();
+                    txt_nombreusuario.Clear();
+                    txt_Nombre_UsuarioSist.Clear();
+                    comboBox1.Enabled = true;
                     clsConexion clsConexion1 = new clsConexion();
                     clsConexion1.cargarDatosUsuarios(dataGridView1);
                 }
@@ -112,6 +116,10 @@ namespace Proyecto_Biblioteca
                         MessageBox.Show("El registro ha sido eliminado");
                         sconexion1.Close();
                     }
+                    txt_Id_UsuarioSist.Clear();
+                    txt_nombreusuario.Clear();
+                    txt_Nombre_UsuarioSist.Clear();
+                    comboBox1.Enabled = true;
 
 
                     clsConexion clsConexion1 = new clsConexion();
@@ -158,7 +166,10 @@ namespace Proyecto_Biblioteca
                         sconexion1.Close();
                     }
 
-
+                    txt_Id_UsuarioSist.Clear();
+                    txt_nombreusuario.Clear();
+                    txt_Nombre_UsuarioSist.Clear();
+                    comboBox1.Enabled = true;
                     clsConexion clsConexion1 = new clsConexion();
                     clsConexion1.cargarDatosUsuarios(dataGridView1);
                 }

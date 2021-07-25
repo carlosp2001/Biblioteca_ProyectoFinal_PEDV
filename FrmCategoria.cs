@@ -117,7 +117,7 @@ namespace Proyecto_Biblioteca
                     SqlConnection sconexion1 = new SqlConnection();
                     sconexion1.ConnectionString = conexion1;
                     sconexion1.Open();
-                    SqlCommand modificar = new SqlCommand("update Categoria set NOMBRE_CATEGORIA=@NOMBRE_CATEGORIA1 where ID_CATEGORIAL = " + txt_Id_Cat.Text, sconexion1);
+                    SqlCommand modificar = new SqlCommand("update Categoria set NOMBRE_CATEGORIA=@NOMBRE_CATEGORIA1 where ID_CATEGORIA = " + txt_Id_Cat.Text, sconexion1);
                     modificar.Parameters.AddWithValue("@NOMBRE_CATEGORIA1", txt_Nombre_Cat.Text);
 
                     modificar.ExecuteNonQuery();

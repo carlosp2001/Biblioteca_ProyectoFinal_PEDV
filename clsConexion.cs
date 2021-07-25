@@ -106,7 +106,8 @@ namespace Proyecto_Biblioteca
                     }
         }
 
-        //Poliformismo
+
+        //Polimorfismo
         public void cargarDatos(DataGridView dgv)
         {
             try
@@ -160,6 +161,24 @@ namespace Proyecto_Biblioteca
             cmb1.DataSource = dt;
                 
         }
+        public void cargarDatoscomboboxDNIUsuario(ComboBox cmb1)
+        {
+
+            sconexion.Open();
+            SqlCommand cmd = new SqlCommand("Select DNI_USUARIO FROM Usuario_Lector", sconexion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            sconexion.Close();
+            cmb1.DisplayMember = "DNI_USUARIO";
+            cmb1.ValueMember = "DNI_USUARIO";
+            DataRow fila = dt.NewRow();
+            dt.Rows.InsertAt(fila, 0);
+            cmb1.ValueMember = "DNI_USUARIO";
+            cmb1.DisplayMember = "DNI_USUARIO";
+            cmb1.DataSource = dt;
+
+        }
         public void cargarDatoscomboboxCategoria(ComboBox cmb1)
         {
 
@@ -209,6 +228,23 @@ namespace Proyecto_Biblioteca
 
         }
 
+        public void cargarDatosPrestDevuelto(DataGridView dgv)
+        {
+            try
+            {
+                sconexion.Open();
+                SqlDataAdapter da = new SqlDataAdapter("Select * from Prestamo where FECHA_DEVOLUCION is not null", conexion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+                sconexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
+            }
+        }
         public void cargarDatosUsuarioLector(DataGridView dgv)
         {
             try

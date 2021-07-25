@@ -18,11 +18,12 @@ namespace Proyecto_Biblioteca
             InitializeComponent();
             if (tipodeaccion == "Entrega")
             {
-                dtp_fechalimite.Enabled = false;
+                
                 dateT_FPrest_PrestLib.Enabled = false;
                 dgv_libros.Enabled = false;
                 txt_ID_PrestamoLib.Enabled = false;
-                txt_Nombre_PrestamoLib.Enabled = false;
+                comb_DNI.Enabled = false;
+                
                 dateT_FDevolu_PrestLib.Enabled = true;
                 btn_Devolucion.Visible = true;
                 btn_Agregar_PrestLib.Visible = false;
@@ -35,6 +36,7 @@ namespace Proyecto_Biblioteca
         {
             clsConexion1.cargarDatos(dgv_PrestLib, "Prestamo");
             clsConexion1.cargarDatos(dgv_libros);
+            clsConexion1.cargarDatoscomboboxDNIUsuario(comb_DNI);
             txt_ID_PrestamoLib.Enabled = false;
             
         }
@@ -43,34 +45,35 @@ namespace Proyecto_Biblioteca
         {
             try
             {
-                if (txt_Nombre_PrestamoLib.Text == string.Empty || libro_code == string.Empty)
+                if (comb_DNI.Text == string.Empty || libro_code == string.Empty)
                 {
                     MessageBox.Show("Error... No puede insertar datos en blanco", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
+                   
                     string fecha_prestamo = dateT_FPrest_PrestLib.Value.ToString();
-                    string fecha_limite = dtp_fechalimite.Value.ToString();
+                 
                     string conexion1 = "Data Source= Windows10\\SQLEXPRESS; Initial Catalog=BIBLIOTECA ;Integrated Security=True";
                     SqlConnection sconexion1 = new SqlConnection();
                     sconexion1.ConnectionString = conexion1;
                     sconexion1.Open();
-                    SqlCommand agregar = new SqlCommand("Insert into Prestamo(DNI_USUARIO, FECHA_PRESTAMO,FECHA_LIMITE, ID_LIBRO) VALUES(@DNI_USUARIO1, @FECHA_PRESTAMO1, @FECHA_LIMITE1 ,@ID_LIBRO1)", sconexion1);
-                    agregar.Parameters.AddWithValue("@DNI_USUARIO1", txt_Nombre_PrestamoLib.Text);
+                    SqlCommand agregar = new SqlCommand("Insert into Prestamo(DNI_USUARIO, FECHA_PRESTAMO,ID_LIBRO) VALUES(@DNI_USUARIO1, @FECHA_PRESTAMO1 ,@ID_LIBRO1)", sconexion1);
+                    agregar.Parameters.AddWithValue("@DNI_USUARIO1", comb_DNI.Text);
                     agregar.Parameters.AddWithValue("@FECHA_PRESTAMO1",fecha_prestamo);
-                    agregar.Parameters.AddWithValue("@FECHA_LIMITE1",fecha_limite);
+                    
                     agregar.Parameters.AddWithValue("@ID_LIBRO1",libro_code);
                     
 
                     agregar.ExecuteNonQuery();
                     sconexion1.Close();
                     txt_ID_PrestamoLib.Clear();
-                    txt_Nombre_PrestamoLib.Clear();
+                    comb_DNI.SelectedIndex=-1;
                     libro_code = string.Empty;
                     this.txt_ID_PrestamoLib.Focus();
 
                     clsConexion clsConexion1 = new clsConexion();
-                    clsConexion1.cargarDatos(dgv_PrestLib);
+                    clsConexion1.cargarDatos(dgv_PrestLib, "Prestamo");
                 }
             }
             catch
@@ -100,7 +103,7 @@ namespace Proyecto_Biblioteca
         {
             try
             {
-                if (txt_ID_PrestamoLib.Text == string.Empty || txt_Nombre_PrestamoLib.Text == string.Empty || libro_code == string.Empty)
+                if (txt_ID_PrestamoLib.Text == string.Empty || comb_DNI.Text == string.Empty || libro_code == string.Empty)
                 {
                     MessageBox.Show("Error... No puede insertar datos en blanco", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -117,7 +120,8 @@ namespace Proyecto_Biblioteca
                     dgv_PrestLib.Rows.RemoveAt(y);
                     MessageBox.Show("El registro ha sido eliminado");
                     txt_ID_PrestamoLib.Clear();
-                    txt_Nombre_PrestamoLib.Clear();
+                    comb_DNI.SelectedIndex = -1;
+
                     libro_code = string.Empty;
                     this.txt_ID_PrestamoLib.Focus();
 
@@ -136,9 +140,9 @@ namespace Proyecto_Biblioteca
         {
             y = e.RowIndex;
             txt_ID_PrestamoLib.Text = dgv_PrestLib.CurrentRow.Cells[0].Value.ToString();
-            txt_Nombre_PrestamoLib.Text = dgv_PrestLib.CurrentRow.Cells[1].Value.ToString();
+            comb_DNI.SelectedIndex =comb_DNI.FindStringExact(dgv_PrestLib.CurrentRow.Cells[1].Value.ToString());
             dateT_FPrest_PrestLib.Value = Convert.ToDateTime(dgv_PrestLib.CurrentRow.Cells[2].Value.ToString());
-            dtp_fechalimite.Value = Convert.ToDateTime(dgv_PrestLib.CurrentRow.Cells[3].Value.ToString());
+
             if (dgv_PrestLib.CurrentRow.Cells[4].Value.ToString() != string.Empty)
             { 
                 dateT_FDevolu_PrestLib.Value = Convert.ToDateTime(dgv_PrestLib.CurrentRow.Cells[4].Value.ToString());
@@ -175,7 +179,7 @@ namespace Proyecto_Biblioteca
                     agregar.ExecuteNonQuery();
                     sconexion1.Close();
                     txt_ID_PrestamoLib.Clear();
-                    txt_Nombre_PrestamoLib.Clear();
+                    comb_DNI.SelectedIndex = -1;
                     libro_code = string.Empty;
                     this.txt_ID_PrestamoLib.Focus();
 

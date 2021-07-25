@@ -105,6 +105,12 @@
       <DependentUpon>BIBLIOTECADataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="clsConexion.cs" />
+    <Compile Include="DGV_Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DGV_Prestamos.Designer.cs">
+      <DependentUpon>DGV_Prestamos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DGV_Prestamos.resx">
+      <DependentUpon>DGV_Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

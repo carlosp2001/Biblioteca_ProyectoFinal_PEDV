@@ -50,5 +50,12 @@ namespace Proyecto_Biblioteca
             frmRealizar.ShowDialog();
 
         }
+        DGV_Prestamos dGV_Prestamos = new DGV_Prestamos();
+
+        private void btn_Emple_Fact_Click(object sender, EventArgs e)
+        {
+            dGV_Prestamos.ShowDialog();
+
+        }
     }
 }

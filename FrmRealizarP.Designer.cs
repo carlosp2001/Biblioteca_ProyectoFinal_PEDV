@@ -43,22 +43,20 @@ namespace Proyecto_Biblioteca
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dgv_libros = new System.Windows.Forms.DataGridView();
             this.dateT_FDevolu_PrestLib = new System.Windows.Forms.DateTimePicker();
             this.dateT_FPrest_PrestLib = new System.Windows.Forms.DateTimePicker();
-            this.lbl_fechalimite = new System.Windows.Forms.Label();
             this.txt_ID_PrestamoLib = new System.Windows.Forms.TextBox();
-            this.txt_Nombre_PrestamoLib = new System.Windows.Forms.TextBox();
             this.dgv_PrestLib = new System.Windows.Forms.DataGridView();
             this.btn_Agregar_PrestLib = new System.Windows.Forms.Button();
             this.btn_Eliminar_PrestLib = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dgv_libros = new System.Windows.Forms.DataGridView();
-            this.dtp_fechalimite = new System.Windows.Forms.DateTimePicker();
             this.btn_Devolucion = new System.Windows.Forms.Button();
+            this.comb_DNI = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_PrestLib)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_libros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_PrestLib)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewTextBoxColumn1
@@ -147,7 +145,7 @@ namespace Proyecto_Biblioteca
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(418, 159);
+            this.label7.Location = new System.Drawing.Point(418, 116);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 13);
@@ -158,13 +156,11 @@ namespace Proyecto_Biblioteca
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Controls.Add(this.dtp_fechalimite);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.dgv_libros);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.dateT_FDevolu_PrestLib);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.lbl_fechalimite);
             this.groupBox1.Controls.Add(this.dateT_FPrest_PrestLib);
             this.groupBox1.Location = new System.Drawing.Point(37, 192);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
@@ -186,11 +182,27 @@ namespace Proyecto_Biblioteca
             this.dateTimePicker1.TabIndex = 12;
             this.dateTimePicker1.Value = new System.DateTime(2021, 7, 12, 0, 0, 0, 0);
             // 
+            // dgv_libros
+            // 
+            this.dgv_libros.AllowUserToAddRows = false;
+            this.dgv_libros.AllowUserToDeleteRows = false;
+            this.dgv_libros.BackgroundColor = System.Drawing.Color.Bisque;
+            this.dgv_libros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_libros.Location = new System.Drawing.Point(18, 36);
+            this.dgv_libros.Margin = new System.Windows.Forms.Padding(1);
+            this.dgv_libros.Name = "dgv_libros";
+            this.dgv_libros.ReadOnly = true;
+            this.dgv_libros.RowHeadersWidth = 123;
+            this.dgv_libros.RowTemplate.Height = 46;
+            this.dgv_libros.Size = new System.Drawing.Size(382, 168);
+            this.dgv_libros.TabIndex = 15;
+            this.dgv_libros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_libros_CellClick);
+            // 
             // dateT_FDevolu_PrestLib
             // 
             this.dateT_FDevolu_PrestLib.Enabled = false;
             this.dateT_FDevolu_PrestLib.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateT_FDevolu_PrestLib.Location = new System.Drawing.Point(531, 159);
+            this.dateT_FDevolu_PrestLib.Location = new System.Drawing.Point(531, 116);
             this.dateT_FDevolu_PrestLib.Margin = new System.Windows.Forms.Padding(1);
             this.dateT_FDevolu_PrestLib.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             this.dateT_FDevolu_PrestLib.Name = "dateT_FDevolu_PrestLib";
@@ -209,16 +221,6 @@ namespace Proyecto_Biblioteca
             this.dateT_FPrest_PrestLib.TabIndex = 9;
             this.dateT_FPrest_PrestLib.Value = new System.DateTime(2021, 7, 12, 0, 0, 0, 0);
             // 
-            // lbl_fechalimite
-            // 
-            this.lbl_fechalimite.AutoSize = true;
-            this.lbl_fechalimite.Location = new System.Drawing.Point(418, 95);
-            this.lbl_fechalimite.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lbl_fechalimite.Name = "lbl_fechalimite";
-            this.lbl_fechalimite.Size = new System.Drawing.Size(70, 13);
-            this.lbl_fechalimite.TabIndex = 11;
-            this.lbl_fechalimite.Text = "Fecha Limite:";
-            // 
             // txt_ID_PrestamoLib
             // 
             this.txt_ID_PrestamoLib.Location = new System.Drawing.Point(139, 89);
@@ -226,15 +228,6 @@ namespace Proyecto_Biblioteca
             this.txt_ID_PrestamoLib.Name = "txt_ID_PrestamoLib";
             this.txt_ID_PrestamoLib.Size = new System.Drawing.Size(127, 20);
             this.txt_ID_PrestamoLib.TabIndex = 8;
-            // 
-            // txt_Nombre_PrestamoLib
-            // 
-            this.txt_Nombre_PrestamoLib.Location = new System.Drawing.Point(139, 140);
-            this.txt_Nombre_PrestamoLib.Margin = new System.Windows.Forms.Padding(1);
-            this.txt_Nombre_PrestamoLib.Name = "txt_Nombre_PrestamoLib";
-            this.txt_Nombre_PrestamoLib.Size = new System.Drawing.Size(127, 20);
-            this.txt_Nombre_PrestamoLib.TabIndex = 9;
-            this.txt_Nombre_PrestamoLib.TextChanged += new System.EventHandler(this.txt_Nombre_PrestamoLib_TextChanged);
             // 
             // dgv_PrestLib
             // 
@@ -295,33 +288,6 @@ namespace Proyecto_Biblioteca
             this.label8.TabIndex = 14;
             this.label8.Text = "Id de Prestamo:";
             // 
-            // dgv_libros
-            // 
-            this.dgv_libros.AllowUserToAddRows = false;
-            this.dgv_libros.AllowUserToDeleteRows = false;
-            this.dgv_libros.BackgroundColor = System.Drawing.Color.Bisque;
-            this.dgv_libros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_libros.Location = new System.Drawing.Point(18, 36);
-            this.dgv_libros.Margin = new System.Windows.Forms.Padding(1);
-            this.dgv_libros.Name = "dgv_libros";
-            this.dgv_libros.ReadOnly = true;
-            this.dgv_libros.RowHeadersWidth = 123;
-            this.dgv_libros.RowTemplate.Height = 46;
-            this.dgv_libros.Size = new System.Drawing.Size(382, 168);
-            this.dgv_libros.TabIndex = 15;
-            this.dgv_libros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_libros_CellClick);
-            // 
-            // dtp_fechalimite
-            // 
-            this.dtp_fechalimite.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fechalimite.Location = new System.Drawing.Point(531, 95);
-            this.dtp_fechalimite.Margin = new System.Windows.Forms.Padding(1);
-            this.dtp_fechalimite.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
-            this.dtp_fechalimite.Name = "dtp_fechalimite";
-            this.dtp_fechalimite.Size = new System.Drawing.Size(76, 20);
-            this.dtp_fechalimite.TabIndex = 16;
-            this.dtp_fechalimite.Value = new System.DateTime(2021, 7, 12, 0, 0, 0, 0);
-            // 
             // btn_Devolucion
             // 
             this.btn_Devolucion.Location = new System.Drawing.Point(370, 74);
@@ -334,18 +300,26 @@ namespace Proyecto_Biblioteca
             this.btn_Devolucion.Visible = false;
             this.btn_Devolucion.Click += new System.EventHandler(this.btn_Devolucion_Click);
             // 
+            // comb_DNI
+            // 
+            this.comb_DNI.FormattingEnabled = true;
+            this.comb_DNI.Location = new System.Drawing.Point(139, 140);
+            this.comb_DNI.Name = "comb_DNI";
+            this.comb_DNI.Size = new System.Drawing.Size(121, 21);
+            this.comb_DNI.TabIndex = 16;
+            // 
             // FrmRealizarP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 729);
+            this.Controls.Add(this.comb_DNI);
             this.Controls.Add(this.btn_Devolucion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_Eliminar_PrestLib);
             this.Controls.Add(this.btn_Agregar_PrestLib);
             this.Controls.Add(this.dgv_PrestLib);
-            this.Controls.Add(this.txt_Nombre_PrestamoLib);
             this.Controls.Add(this.txt_ID_PrestamoLib);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmRealizarP";
@@ -353,8 +327,8 @@ namespace Proyecto_Biblioteca
             this.Load += new System.EventHandler(this.FrmRealizarP_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_PrestLib)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_libros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_PrestLib)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,12 +345,10 @@ namespace Proyecto_Biblioteca
         private System.Windows.Forms.DateTimePicker dateT_FDevolu_PrestLib;
         private System.Windows.Forms.DateTimePicker dateT_FPrest_PrestLib;
         private System.Windows.Forms.TextBox txt_ID_PrestamoLib;
-        private System.Windows.Forms.TextBox txt_Nombre_PrestamoLib;
         private System.Windows.Forms.DataGridView dgv_PrestLib;
         private System.Windows.Forms.Button btn_Agregar_PrestLib;
         private System.Windows.Forms.Button btn_Eliminar_PrestLib;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label lbl_fechalimite;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -387,7 +359,7 @@ namespace Proyecto_Biblioteca
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgv_libros;
-        private System.Windows.Forms.DateTimePicker dtp_fechalimite;
         private System.Windows.Forms.Button btn_Devolucion;
+        private System.Windows.Forms.ComboBox comb_DNI;
     }
 }

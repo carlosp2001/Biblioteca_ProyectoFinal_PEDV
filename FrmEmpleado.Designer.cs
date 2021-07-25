@@ -77,6 +77,7 @@ namespace Proyecto_Biblioteca
             this.btn_Emple_Fact.TabIndex = 3;
             this.btn_Emple_Fact.Text = "Realizar Factura";
             this.btn_Emple_Fact.UseVisualStyleBackColor = true;
+            this.btn_Emple_Fact.Click += new System.EventHandler(this.btn_Emple_Fact_Click);
             // 
             // FrmEmpleado
             // 

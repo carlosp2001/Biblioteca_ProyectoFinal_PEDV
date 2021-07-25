@@ -39,11 +39,10 @@ namespace Proyecto_Biblioteca
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 34);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 123;
-            this.dataGridView1.Size = new System.Drawing.Size(2353, 1064);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 374);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -51,10 +50,9 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Generar_Factura.BackColor = System.Drawing.Color.Silver;
             this.btn_Generar_Factura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Generar_Factura.Location = new System.Drawing.Point(1146, 1149);
-            this.btn_Generar_Factura.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.btn_Generar_Factura.Location = new System.Drawing.Point(362, 404);
             this.btn_Generar_Factura.Name = "btn_Generar_Factura";
-            this.btn_Generar_Factura.Size = new System.Drawing.Size(410, 102);
+            this.btn_Generar_Factura.Size = new System.Drawing.Size(129, 36);
             this.btn_Generar_Factura.TabIndex = 1;
             this.btn_Generar_Factura.Text = "Generar Factura";
             this.btn_Generar_Factura.UseVisualStyleBackColor = false;
@@ -62,15 +60,14 @@ namespace Proyecto_Biblioteca
             // 
             // DGV_Prestamos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(2533, 1281);
+            this.ClientSize = new System.Drawing.Size(785, 455);
             this.Controls.Add(this.btn_Generar_Factura);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Name = "DGV_Prestamos";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

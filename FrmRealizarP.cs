@@ -13,6 +13,11 @@ namespace Proyecto_Biblioteca
 {
     public partial class FrmRealizarP : Form
     {
+        //Metodo constructor del formulario
+        /// <summary>
+        /// Metodo constructor del formulario
+        /// </summary>
+        /// <param name="tipodeaccion"></Determina que accion realizara el formulario de prestamo>
         public FrmRealizarP(string tipodeaccion)
         {
             InitializeComponent();
@@ -32,6 +37,14 @@ namespace Proyecto_Biblioteca
             }
         }
         clsConexion clsConexion1 = new clsConexion();
+        //Metodo al cargar del formulario
+        /// <summary>
+        /// Metodo al cargar del formulario
+        /// 
+        /// </summary>
+        /// <param name="clsConexion"></Crea una instancia a la clase conexion>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmRealizarP_Load(object sender, EventArgs e)
         {
             clsConexion1.cargarDatos(dgv_PrestLib, "Prestamo");
@@ -41,6 +54,13 @@ namespace Proyecto_Biblioteca
             
         }
 
+        //Boton que realiza la accion de agregar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de agregar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Agregar_PrestLib_Click(object sender, EventArgs e)
         {
             try
@@ -93,12 +113,26 @@ namespace Proyecto_Biblioteca
         }
         int i;
         string libro_code;
+        //Metodo al seleccionar un item del datagridview
+        /// <summary>
+        /// Metodo al seleccionar un item del datagridview
+        /// </summary>
+        /// <param name="codigo"></Selecciona el valor del valuemember asociado con la base de datos>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgv_libros_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
             libro_code= dgv_libros.CurrentRow.Cells[0].Value.ToString();
         }
 
+        //Boton que realiza la accion de eliminar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de eliminar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Eliminar_PrestLib_Click(object sender, EventArgs e)
         {
             try
@@ -136,6 +170,13 @@ namespace Proyecto_Biblioteca
         }
 
         int y;
+        //Metodo al seleccion una celda del datagridview
+        /// <summary>
+        /// Metodo al seleccion una celda del datagridview
+        /// </summary>
+        /// entre el combobox,textbox y la celda>
+        /// <param name="sender"></param>
+        /// <param name="e"></Indica el indice de la celda seleccionada
         private void dgv_PrestLib_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             y = e.RowIndex;
@@ -154,6 +195,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Boton que realiza la accion de agregar la fecha de devolucion a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de agregar la fecha de devolucion a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Devolucion_Click(object sender, EventArgs e)
         {
             try

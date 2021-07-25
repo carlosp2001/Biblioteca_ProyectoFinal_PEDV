@@ -92,9 +92,10 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Modi_libro.BackColor = System.Drawing.Color.Silver;
             this.btn_Modi_libro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Modi_libro.Location = new System.Drawing.Point(1718, 647);
+            this.btn_Modi_libro.Location = new System.Drawing.Point(543, 227);
+            this.btn_Modi_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Modi_libro.Name = "btn_Modi_libro";
-            this.btn_Modi_libro.Size = new System.Drawing.Size(196, 102);
+            this.btn_Modi_libro.Size = new System.Drawing.Size(62, 36);
             this.btn_Modi_libro.TabIndex = 42;
             this.btn_Modi_libro.Text = "Modificar";
             this.btn_Modi_libro.UseVisualStyleBackColor = false;
@@ -104,9 +105,10 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Agre_libro.BackColor = System.Drawing.Color.Silver;
             this.btn_Agre_libro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Agre_libro.Location = new System.Drawing.Point(1718, 308);
+            this.btn_Agre_libro.Location = new System.Drawing.Point(543, 108);
+            this.btn_Agre_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Agre_libro.Name = "btn_Agre_libro";
-            this.btn_Agre_libro.Size = new System.Drawing.Size(196, 94);
+            this.btn_Agre_libro.Size = new System.Drawing.Size(62, 33);
             this.btn_Agre_libro.TabIndex = 41;
             this.btn_Agre_libro.Text = "Agregar";
             this.btn_Agre_libro.UseVisualStyleBackColor = false;
@@ -114,30 +116,34 @@ namespace Proyecto_Biblioteca
             // 
             // txt_npaginas_libro
             // 
-            this.txt_npaginas_libro.Location = new System.Drawing.Point(390, 749);
+            this.txt_npaginas_libro.Location = new System.Drawing.Point(123, 263);
+            this.txt_npaginas_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_npaginas_libro.Name = "txt_npaginas_libro";
-            this.txt_npaginas_libro.Size = new System.Drawing.Size(185, 44);
+            this.txt_npaginas_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_npaginas_libro.TabIndex = 39;
             // 
             // txt_edicion_libro
             // 
-            this.txt_edicion_libro.Location = new System.Drawing.Point(390, 615);
+            this.txt_edicion_libro.Location = new System.Drawing.Point(123, 216);
+            this.txt_edicion_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_edicion_libro.Name = "txt_edicion_libro";
-            this.txt_edicion_libro.Size = new System.Drawing.Size(185, 44);
+            this.txt_edicion_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_edicion_libro.TabIndex = 38;
             // 
             // txt_titulo_libro
             // 
-            this.txt_titulo_libro.Location = new System.Drawing.Point(390, 475);
+            this.txt_titulo_libro.Location = new System.Drawing.Point(123, 167);
+            this.txt_titulo_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_titulo_libro.Name = "txt_titulo_libro";
-            this.txt_titulo_libro.Size = new System.Drawing.Size(185, 44);
+            this.txt_titulo_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_titulo_libro.TabIndex = 37;
             // 
             // txt_Id_libro
             // 
-            this.txt_Id_libro.Location = new System.Drawing.Point(390, 339);
+            this.txt_Id_libro.Location = new System.Drawing.Point(123, 119);
+            this.txt_Id_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Id_libro.Name = "txt_Id_libro";
-            this.txt_Id_libro.Size = new System.Drawing.Size(185, 44);
+            this.txt_Id_libro.Size = new System.Drawing.Size(61, 20);
             this.txt_Id_libro.TabIndex = 36;
             // 
             // Telefono_UsuarioSist
@@ -145,9 +151,10 @@ namespace Proyecto_Biblioteca
             this.Telefono_UsuarioSist.AutoSize = true;
             this.Telefono_UsuarioSist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Telefono_UsuarioSist.ForeColor = System.Drawing.Color.Silver;
-            this.Telefono_UsuarioSist.Location = new System.Drawing.Point(158, 751);
+            this.Telefono_UsuarioSist.Location = new System.Drawing.Point(50, 264);
+            this.Telefono_UsuarioSist.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.Telefono_UsuarioSist.Name = "Telefono_UsuarioSist";
-            this.Telefono_UsuarioSist.Size = new System.Drawing.Size(195, 37);
+            this.Telefono_UsuarioSist.Size = new System.Drawing.Size(73, 13);
             this.Telefono_UsuarioSist.TabIndex = 35;
             this.Telefono_UsuarioSist.Text = "N. Paginas:";
             // 
@@ -156,9 +163,10 @@ namespace Proyecto_Biblioteca
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(165, 618);
+            this.label4.Location = new System.Drawing.Point(52, 217);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 37);
+            this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 34;
             this.label4.Text = "Edicion:";
             // 
@@ -167,9 +175,10 @@ namespace Proyecto_Biblioteca
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(158, 478);
+            this.label3.Location = new System.Drawing.Point(50, 168);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 37);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 33;
             this.label3.Text = "Titulo:";
             // 
@@ -178,20 +187,22 @@ namespace Proyecto_Biblioteca
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(158, 333);
+            this.label2.Location = new System.Drawing.Point(50, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 37);
+            this.label2.Size = new System.Drawing.Size(22, 13);
             this.label2.TabIndex = 32;
             this.label2.Text = "Id:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(890, 72);
+            this.label1.Location = new System.Drawing.Point(281, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 98);
+            this.label1.Size = new System.Drawing.Size(104, 36);
             this.label1.TabIndex = 31;
             this.label1.Text = "LIBRO";
             // 
@@ -213,9 +224,10 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Eliminar_Libros.BackColor = System.Drawing.Color.Silver;
             this.btn_Eliminar_Libros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Eliminar_Libros.Location = new System.Drawing.Point(1718, 482);
+            this.btn_Eliminar_Libros.Location = new System.Drawing.Point(543, 169);
+            this.btn_Eliminar_Libros.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Eliminar_Libros.Name = "btn_Eliminar_Libros";
-            this.btn_Eliminar_Libros.Size = new System.Drawing.Size(196, 94);
+            this.btn_Eliminar_Libros.Size = new System.Drawing.Size(62, 33);
             this.btn_Eliminar_Libros.TabIndex = 43;
             this.btn_Eliminar_Libros.Text = "Eliminar";
             this.btn_Eliminar_Libros.UseVisualStyleBackColor = false;
@@ -226,19 +238,19 @@ namespace Proyecto_Biblioteca
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(820, 339);
+            this.label5.Location = new System.Drawing.Point(259, 119);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 37);
+            this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 44;
             this.label5.Text = "Editorial:";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(982, 330);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.comboBox1.Location = new System.Drawing.Point(310, 116);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(375, 45);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 45;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -267,10 +279,9 @@ namespace Proyecto_Biblioteca
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriaBindingSource1, "ID_CATEGORIA", true));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(982, 475);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.comboBox2.Location = new System.Drawing.Point(310, 167);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(375, 45);
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 47;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -299,9 +310,10 @@ namespace Proyecto_Biblioteca
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(820, 484);
+            this.label6.Location = new System.Drawing.Point(259, 170);
+            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 37);
+            this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 46;
             this.label6.Text = "Categoria:";
             // 
@@ -328,9 +340,10 @@ namespace Proyecto_Biblioteca
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(820, 615);
+            this.label7.Location = new System.Drawing.Point(259, 216);
+            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 37);
+            this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 48;
             this.label7.Text = "Autor:";
             // 
@@ -364,10 +377,9 @@ namespace Proyecto_Biblioteca
             // 
             this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.autoresBindingSource1, "ID_AUTOR", true));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(982, 609);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.comboBox3.Location = new System.Drawing.Point(310, 214);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(375, 45);
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 49;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_2);
             // 
@@ -377,20 +389,21 @@ namespace Proyecto_Biblioteca
             this.dgv_admi_libro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_admi_libro.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dgv_admi_libro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_admi_libro.Location = new System.Drawing.Point(171, 848);
+            this.dgv_admi_libro.Location = new System.Drawing.Point(54, 298);
+            this.dgv_admi_libro.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgv_admi_libro.Name = "dgv_admi_libro";
             this.dgv_admi_libro.RowHeadersWidth = 40;
             this.dgv_admi_libro.RowTemplate.Height = 46;
-            this.dgv_admi_libro.Size = new System.Drawing.Size(1827, 398);
+            this.dgv_admi_libro.Size = new System.Drawing.Size(577, 140);
             this.dgv_admi_libro.TabIndex = 40;
             this.dgv_admi_libro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_admi_libro_CellClick);
             // 
             // FrmLibro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(2147, 1275);
+            this.ClientSize = new System.Drawing.Size(679, 465);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox2);
@@ -411,6 +424,7 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "FrmLibro";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -13,6 +13,12 @@ namespace Proyecto_Biblioteca
 {
     public partial class FrmLector : Form
     {
+        //Metodo constructor del formulario
+        /// <summary>
+        /// Metodo constructor del formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public FrmLector(string tipodeusuario)
         {
             InitializeComponent();
@@ -26,12 +32,28 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Metodo al cargar del formulario
+        /// <summary>
+        /// Metodo al cargar del formulario
+        /// 
+        /// </summary>
+        /// <param name="clsConexion"></Crea una instancia a la clase conexion>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmLector_Load(object sender, EventArgs e)
         {
             clsConexion clsConexion1 = new clsConexion();
-            clsConexion1.cargarDatosUsuarioLector(dgv_admi_lector);
+            clsConexion1.cargarDatos(dgv_admi_lector);
         }
         int i;
+
+        //Metodo al seleccion una celda del datagridview
+        /// <summary>
+        /// Metodo al seleccion una celda del datagridview
+        /// </summary>
+        /// entre el combobox,textbox y la celda>
+        /// <param name="sender"></param>
+        /// <param name="e"></Indica el indice de la celda seleccionada>
         private void dgv_admi_lector_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
@@ -43,6 +65,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Boton que realiza la accion de agregar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de agregar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_agre_lector_Click(object sender, EventArgs e)
         {
             {
@@ -76,7 +105,7 @@ namespace Proyecto_Biblioteca
                         
                         this.txt_dni_lector.Focus();
                         clsConexion clsConexion1 = new clsConexion();
-                        clsConexion1.cargarDatosUsuarioLector(dgv_admi_lector);
+                        clsConexion1.cargarDatos(dgv_admi_lector);
                     }
                 }
                 catch
@@ -91,6 +120,13 @@ namespace Proyecto_Biblioteca
             this.Close();
         }
 
+        //Boton que realiza la accion de eliminar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de eliminar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
             try
@@ -117,7 +153,7 @@ namespace Proyecto_Biblioteca
                     txt_Direcc_lector.Clear();
                     this.txt_dni_lector.Focus();
                     clsConexion clsConexion1 = new clsConexion();
-                    clsConexion1.cargarDatosUsuarioLector(dgv_admi_lector);
+                    clsConexion1.cargarDatos(dgv_admi_lector);
 
 
 
@@ -129,6 +165,13 @@ namespace Proyecto_Biblioteca
             }
         }
 
+        //Boton que realiza la accion de eliminar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de eliminar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_modi_lector_Click(object sender, EventArgs e)
         {
             try
@@ -164,7 +207,7 @@ namespace Proyecto_Biblioteca
 
                     this.txt_dni_lector.Focus();
                     clsConexion clsConexion1 = new clsConexion();
-                    clsConexion1.cargarDatosUsuarioLector(dgv_admi_lector);
+                    clsConexion1.cargarDatos(dgv_admi_lector);
                 }
             }
             catch

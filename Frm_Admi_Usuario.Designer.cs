@@ -49,11 +49,12 @@ namespace Proyecto_Biblioteca
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(571, 70);
+            this.label1.Location = new System.Drawing.Point(180, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(863, 98);
+            this.label1.Size = new System.Drawing.Size(240, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario Sistema ";
             // 
@@ -62,9 +63,10 @@ namespace Proyecto_Biblioteca
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Location = new System.Drawing.Point(106, 394);
+            this.label2.Location = new System.Drawing.Point(33, 138);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(323, 37);
+            this.label2.Size = new System.Drawing.Size(119, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre de Usuario:";
             // 
@@ -73,9 +75,10 @@ namespace Proyecto_Biblioteca
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(106, 511);
+            this.label3.Location = new System.Drawing.Point(33, 180);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 37);
+            this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Contraseña:";
             // 
@@ -84,24 +87,27 @@ namespace Proyecto_Biblioteca
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label4.Location = new System.Drawing.Point(112, 653);
+            this.label4.Location = new System.Drawing.Point(35, 229);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(269, 37);
+            this.label4.Size = new System.Drawing.Size(101, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tipo de Usuario:";
             // 
             // txt_Id_UsuarioSist
             // 
-            this.txt_Id_UsuarioSist.Location = new System.Drawing.Point(453, 290);
+            this.txt_Id_UsuarioSist.Location = new System.Drawing.Point(143, 102);
+            this.txt_Id_UsuarioSist.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Id_UsuarioSist.Name = "txt_Id_UsuarioSist";
-            this.txt_Id_UsuarioSist.Size = new System.Drawing.Size(99, 44);
+            this.txt_Id_UsuarioSist.Size = new System.Drawing.Size(34, 20);
             this.txt_Id_UsuarioSist.TabIndex = 5;
             // 
             // txt_Nombre_UsuarioSist
             // 
-            this.txt_Nombre_UsuarioSist.Location = new System.Drawing.Point(453, 511);
+            this.txt_Nombre_UsuarioSist.Location = new System.Drawing.Point(143, 180);
+            this.txt_Nombre_UsuarioSist.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Nombre_UsuarioSist.Name = "txt_Nombre_UsuarioSist";
-            this.txt_Nombre_UsuarioSist.Size = new System.Drawing.Size(330, 44);
+            this.txt_Nombre_UsuarioSist.Size = new System.Drawing.Size(107, 20);
             this.txt_Nombre_UsuarioSist.TabIndex = 6;
             // 
             // dataGridView1
@@ -110,13 +116,14 @@ namespace Proyecto_Biblioteca
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(76, 777);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 273);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 123;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 46;
-            this.dataGridView1.Size = new System.Drawing.Size(1723, 546);
+            this.dataGridView1.Size = new System.Drawing.Size(544, 192);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -124,9 +131,10 @@ namespace Proyecto_Biblioteca
             // 
             this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.Location = new System.Drawing.Point(1473, 314);
+            this.button1.Location = new System.Drawing.Point(465, 110);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 94);
+            this.button1.Size = new System.Drawing.Size(62, 33);
             this.button1.TabIndex = 14;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
@@ -136,9 +144,10 @@ namespace Proyecto_Biblioteca
             // 
             this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button2.Location = new System.Drawing.Point(1473, 605);
+            this.button2.Location = new System.Drawing.Point(465, 213);
+            this.button2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 102);
+            this.button2.Size = new System.Drawing.Size(62, 36);
             this.button2.TabIndex = 15;
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = false;
@@ -147,19 +156,19 @@ namespace Proyecto_Biblioteca
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(453, 635);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.comboBox1.Location = new System.Drawing.Point(143, 223);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(375, 45);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 16;
             // 
             // btn_Eliminar_Usuario
             // 
             this.btn_Eliminar_Usuario.BackColor = System.Drawing.Color.Silver;
             this.btn_Eliminar_Usuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Eliminar_Usuario.Location = new System.Drawing.Point(1473, 454);
+            this.btn_Eliminar_Usuario.Location = new System.Drawing.Point(465, 160);
+            this.btn_Eliminar_Usuario.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Eliminar_Usuario.Name = "btn_Eliminar_Usuario";
-            this.btn_Eliminar_Usuario.Size = new System.Drawing.Size(196, 102);
+            this.btn_Eliminar_Usuario.Size = new System.Drawing.Size(62, 36);
             this.btn_Eliminar_Usuario.TabIndex = 17;
             this.btn_Eliminar_Usuario.Text = "Eliminar";
             this.btn_Eliminar_Usuario.UseVisualStyleBackColor = false;
@@ -167,9 +176,10 @@ namespace Proyecto_Biblioteca
             // 
             // txt_nombreusuario
             // 
-            this.txt_nombreusuario.Location = new System.Drawing.Point(453, 393);
+            this.txt_nombreusuario.Location = new System.Drawing.Point(143, 138);
+            this.txt_nombreusuario.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_nombreusuario.Name = "txt_nombreusuario";
-            this.txt_nombreusuario.Size = new System.Drawing.Size(330, 44);
+            this.txt_nombreusuario.Size = new System.Drawing.Size(107, 20);
             this.txt_nombreusuario.TabIndex = 18;
             // 
             // label5
@@ -177,18 +187,19 @@ namespace Proyecto_Biblioteca
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label5.Location = new System.Drawing.Point(106, 292);
+            this.label5.Location = new System.Drawing.Point(33, 103);
+            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 37);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 19;
             this.label5.Text = "Id Usuario:";
             // 
             // Frm_Admi_Usuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1925, 1378);
+            this.ClientSize = new System.Drawing.Size(586, 483);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_nombreusuario);
             this.Controls.Add(this.btn_Eliminar_Usuario);
@@ -203,6 +214,7 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Frm_Admi_Usuario";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

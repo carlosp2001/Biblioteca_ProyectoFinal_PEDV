@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Biblioteca
 {
+    /// <summary>
+    ///Formulario para realizar el login del usuario se detecta automaticamente si es admin o empleado
+    /// </summary>
     public partial class Frm_Login_Empleado : Form
     {
         public Frm_Login_Empleado()
@@ -30,7 +33,14 @@ namespace Proyecto_Biblioteca
 
 
         }
-
+        //Boton que realiza la accion de Ingresar al sistema
+        /// <summary>
+        /// Boton que realiza la accion de Ingresar al sistema
+        /// </summary>
+        /// <param name="usuario"></Recibe el usuario que la persona proporcione y luego se verifica si existe>
+        /// <param name="contrasena"></Recibe la contraseña que persona proporcione y luego se verifica si existe>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Ingresar_Click(object sender, EventArgs e)
         {
             string usuario = txt_Usuario_Empl.Text;
@@ -50,6 +60,13 @@ namespace Proyecto_Biblioteca
             
         }
 
+        //Metodo para ocultar la contraseña o mostrarla mediante un checkbox
+        /// <summary>
+        /// Metodo para ocultar la contraseña o mostrarla mediante un checkbox
+        /// </summary>
+        /// <param name="PasswordChar"></Define que caracter se mostrara en vez de la contraseña>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)

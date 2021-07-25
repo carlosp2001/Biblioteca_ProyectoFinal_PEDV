@@ -26,6 +26,14 @@ namespace Proyecto_Biblioteca
         }
         int i;
         clsConexion clsConexion1 = new clsConexion();
+
+        //Metodo al seleccion una celda del datagridview
+        /// <summary>
+        /// Metodo al seleccion una celda del datagridview
+        /// </summary>
+        /// entre el combobox,textbox y la celda>
+        /// <param name="sender"></param>
+        /// <param name="e"></Indica el indice de la celda seleccionada>
         private void dgv_Admi_Cat_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
@@ -34,6 +42,13 @@ namespace Proyecto_Biblioteca
             
         }
 
+        //Boton que realiza la accion de agregar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de agregar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Agregar_Cat_Click(object sender, EventArgs e)
         {
 
@@ -68,6 +83,14 @@ namespace Proyecto_Biblioteca
 
         }
 
+
+        //Boton que realiza la accion de eliminar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de eliminar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Eliminar_cat_Click(object sender, EventArgs e)
         {
             try
@@ -103,6 +126,14 @@ namespace Proyecto_Biblioteca
 
         }
 
+
+        //Boton que realiza la accion de editar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de editar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Modi_Cat_Click(object sender, EventArgs e)
         {
             try

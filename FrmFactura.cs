@@ -13,14 +13,28 @@ namespace Proyecto_Biblioteca
 {
     public partial class FrmFactura : Form
     {
+        //Metodo constructor recibe el id del prestamo a generar factura
+        /// <summary>
+        /// Metodo constructor recibe el id del prestamo a generar factura
+        /// </summary>
+        /// <param name="id_prestamo1"></Parametro que recibe el id del prestamo con el cual identificaremos que 
+        /// datos generara la factura>
         public FrmFactura(string id_prestamo1)
         {
             
             InitializeComponent();
+            DGV_Prestamos dGV_Prestamos = new DGV_Prestamos();
             id_prestamo = id_prestamo1;
         }
         string id_prestamo;
 
+        //Polimorfismo:Metodo que nos devolvera un datatable con los datos que solicitamos de la base de datos
+        /// <summary>
+        /// Polimorfismo:Metodo que nos devolvera un datatable con los datos que solicitamos de la base de datos
+        /// </summary>
+        /// <param name="query"></Recibe la linea de comando de Sql que eejecutaremos>
+        /// <param name="id"></Recibe el id con el cual se comparara el parametro de la base de datos>
+        /// <returns></returns>
         private DataTable conseguirquerybd(string query, string id)
         {
             SqlConnection sqlConnection = new SqlConnection();
@@ -35,7 +49,12 @@ namespace Proyecto_Biblioteca
             return dt;
 
         }
-
+        //Metodo que nos devolvera un datatable con los datos que solicitamos de la base de datos
+        /// <summary>
+        /// Metodo que nos devolvera un datatable con los datos que solicitamos de la base de datos
+        /// </summary>
+        /// <param name="id"></Recibe el id con el cual se comparara el parametro de la base de datos>
+        /// <returns></returns>
         private DateTime conseguirqueryfechanac(string id)
         {
             SqlConnection sqlConnection1 = new SqlConnection();
@@ -54,6 +73,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Metodo para calcular la mora
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fechadev"></Recibe la fecha en la cual fue devuelta el libro>
+        /// <param name="fecha_limit"></Recibe la fecha limite calculada en base al dia de entrega>
+        /// <returns></returns>
         private double calcularmora(DateTime fechadev, DateTime fecha_limit)
         {
             double mora=20;
@@ -66,6 +92,16 @@ namespace Proyecto_Biblioteca
             }
             return mora;
         }
+
+        //Metodo al cargar del formulario
+        /// <summary>
+        /// Metodo al cargar del formulario
+        /// 
+        /// </summary>
+        /// <param name="clsConexion"></Crea una instancia a la clase conexion>
+        /// <param name="fecha_actual"></Define la fecha actual del sistema>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmFactura_Load(object sender, EventArgs e)
         {
             

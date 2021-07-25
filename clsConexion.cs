@@ -10,15 +10,33 @@ using System.Data;
 
 namespace Proyecto_Biblioteca
 {
+    //Clase para realizar la conexion a sql server
+    /// <summary>
+    /// Clase para realizar la conexion a sql server
+    /// <param name="conexion"/>Genera la linea fuente para la conexion de Sql Server
+    /// <param name="sconexion"/>Define la nueva conexion a Sql Server
+    /// </summary>
     public class clsConexion
     {
+        
         string conexion ="Data Source= Windows10\\SQLEXPRESS; Initial Catalog=BIBLIOTECA ;Integrated Security=True";
         SqlConnection sconexion = new SqlConnection();
+        
+        //Constructor de la clase conexión
+        /// <summary>
+        /// Constructor de la clase conexión
+        /// <param name="sconexion.ConnectionString"></Define la linea de conexion que tendra la variable de Sql Server>
+        /// </summary>
         public clsConexion()
         {
             sconexion.ConnectionString = conexion;
 
         }
+
+        //Metodo para abrir la conexion a Sql Server
+        /// <summary>
+        /// Metodo para abrir la conexion a Sql Server
+        /// </summary>
         public void abrir()
         {
             try
@@ -31,6 +49,11 @@ namespace Proyecto_Biblioteca
                 MessageBox.Show("Ocurrio un error");
             }
         }
+
+        //Metodo para cerrar la conexion a Sql Server
+        /// <summary>
+        /// Metodo para cerrar la conexion a Sql Server
+        /// </summary>
         public void cerrar()
         {
             try
@@ -43,6 +66,20 @@ namespace Proyecto_Biblioteca
                 MessageBox.Show("Ocurrio un error al cerrar");
             }
         }
+
+        //Metodo para realizar la verificacion de usuario, identificar si es Administrador o Empleado
+        /// <summary>
+        /// Metodo para realizar la verificacion de usuario, identificar si es Administrador o Empleado
+        /// 
+        /// </summary>
+        /// <param name="username"></Parametro que recibe el usuario mandado del textbox usuario del form1>
+        /// <param name="password"></Parametro que recibe la contrasena mandada del textbox contrasena del form1>
+        /// <param name="cmd"></Define la linea de comando Sql que ejecutara el select mediante un if para determinar
+        /// si el usuario se encuentra en la tabal de administrador o en la de empleado>
+        /// <param name="tipologin"></Es la variable que almacena un valor dependiendo del tipo de login>
+        /// <param name="sda" & <param name="dt"></El DataAdapter recibe los datos encontrados del select y los almacena 
+        /// en el datatable>
+        /// <returns></returns>
         public int login(string username, string password)
         {
 
@@ -88,7 +125,14 @@ namespace Proyecto_Biblioteca
 
         }
 
-        //Polimorfismo
+        //Polimorfismo: Funcion para cargarDatos de cualquier tabla y asignarlos a un datagridview
+        //Homonimia o sobrecarga:Existe una funcion del mismo nombre pero recibe diferentes parametros
+        /// <summary>
+        ///Polimorfismo: Funcion para cargarDatos de cualquier tabla y asignarlos a un datagridview
+        ///Homonimia o sobrecarga:Existe una funcion del mismo nombre pero recibe diferentes parametros
+        /// </summary>
+        /// <param name="dgv"></Recibe el DataGridView en el cual queremos cargar los datos>
+        /// <param name="NameTable"></Recibe la tablade Sql en la cual se buscaran los datos a cargar>
         public void cargarDatos(DataGridView dgv, string NameTable)
         {
             try
@@ -107,7 +151,13 @@ namespace Proyecto_Biblioteca
         }
 
 
-        //Polimorfismo
+        //Polimorfismo: Funcion para cargarDatos de la tabla Libro a un datagridview
+        //Homonimia o sobrecarga:Existe una funcion del mismo nombre pero recibe diferentes parametros
+        /// <summary>
+        ///Polimorfismo: Funcion para cargarDatos tabla Libro y asignarlos a un datagridview
+        ///Homonimia o sobrecarga:Existe una funcion del mismo nombre pero recibe diferentes parametros
+        /// </summary>
+        /// <param name="dgv"></Recibe el DataGridView en el cual queremos cargar los datos>
         public void cargarDatos(DataGridView dgv)
         {
             try
@@ -125,6 +175,11 @@ namespace Proyecto_Biblioteca
                 MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
             }
         }
+        //Funcion para cargar los Usuarios del Sistema de la tabla administrador y empleado
+        /// <summary>
+        ///Funcion para cargar los Usuarios del Sistema de la tabla administrador y empleado 
+        /// </summary>
+        /// <param name="dgv"></Recibe el datagridview en el cual queremos cargar los usuarios>
         public void cargarDatosUsuarios(DataGridView dgv)
         {
             try
@@ -143,6 +198,11 @@ namespace Proyecto_Biblioteca
             }
         }
 
+        //Metodo para cargar los datos de la tabla Autores en un combobox
+        /// <summary>
+        /// Metodo para cargar los datos de la tabla Autores en un combobox
+        /// </summary>
+        /// <param name="cmb1"></Recibe el combobox donde se guardaran los datos de sql>
         public void cargarDatoscomboboxAutor(ComboBox cmb1)
         {
             
@@ -161,6 +221,12 @@ namespace Proyecto_Biblioteca
             cmb1.DataSource = dt;
                 
         }
+
+        //Metodo para cargar los datos del DNI del Usuario en un combobox
+        /// <summary>
+        /// Metodo para cargar los datos del DNI del Usuario en un combobox
+        /// </summary>
+        /// <param name="cmb1"></Recibe el combobox en el cual se cargaran los datos del DNI Usuario>
         public void cargarDatoscomboboxDNIUsuario(ComboBox cmb1)
         {
 
@@ -179,6 +245,12 @@ namespace Proyecto_Biblioteca
             cmb1.DataSource = dt;
 
         }
+
+        //Metodo para cargar las categorias de los libros en un combobox
+        /// <summary>
+        /// Metodo para cargar las categorias de los libros en un combobox
+        /// </summary>
+        /// <param name="cmb1"></Recibe el combobox en el cual se cargaran los datos de las categorias de la tabla Libros>
         public void cargarDatoscomboboxCategoria(ComboBox cmb1)
         {
 
@@ -198,6 +270,11 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Metodo para cargar los datos del Editorial en un combobox
+        /// <summary>
+        /// Metodo para cargar los datos del Editorial en un combobox
+        /// </summary>
+        /// <param name="cmb1"></Recibe el combobox en el cual se cargaran los datos del Editorial>
         public void cargarDatoscomboboxEditorial(ComboBox cmb1)
         {
 
@@ -213,6 +290,12 @@ namespace Proyecto_Biblioteca
 
         }
 
+
+        //Metodo para cargar en un combobox los Tipos de Usuario ya sea Administrador o Usuario
+        /// <summary>
+        /// Metodo para cargar en un combobox los Tipos de Usuario ya sea Administrador o Usuario
+        /// </summary>
+        /// <param name="cmb1"></Recibe el combobox en donde se mostraran los tipos de usuarios>
         public void cargarDatoscomboboxTiposdeUsuarios(ComboBox cmb1)
         {
 
@@ -228,6 +311,11 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Metodo para cargar solamente los prestamo que cuenta con una fecha de devolucion
+        /// <summary>
+        /// Metodo para cargar solamente los prestamo que cuenta con una fecha de devolucion
+        /// </summary>
+        /// <param name="dgv"></Recibe el datagridview en donde se mostraran los prestamos>
         public void cargarDatosPrestDevuelto(DataGridView dgv)
         {
             try
@@ -245,22 +333,7 @@ namespace Proyecto_Biblioteca
                 MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
             }
         }
-        public void cargarDatosUsuarioLector(DataGridView dgv)
-        {
-            try
-            {
-                sconexion.Open();
-                SqlDataAdapter da = new SqlDataAdapter("SELECT DNI_USUARIO, NOMBRE, TELEFONO, DIRECCION, FECHA_NACIMIENTO  FROM Usuario_Lector", conexion);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgv.DataSource = dt;
-                sconexion.Close();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se pueden cargar los datos " + ex.ToString());
-            }
-        }
+        
     }
 }

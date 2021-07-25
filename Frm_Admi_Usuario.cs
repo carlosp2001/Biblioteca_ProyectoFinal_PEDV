@@ -11,6 +11,10 @@ using System.Data.SqlClient;
 
 namespace Proyecto_Biblioteca
 {
+    //Formulario para mostrar los usuarios del sistema
+    /// <summary>
+    /// Formulario para mostrar los usuarios del sistema
+    /// </summary>
     public partial class Frm_Admi_Usuario : Form
     {
         public Frm_Admi_Usuario()
@@ -18,6 +22,14 @@ namespace Proyecto_Biblioteca
             InitializeComponent();
         }
 
+        //Metodo constructor del formulario
+        /// <summary>
+        /// Metodo al cargar del formulario
+        /// 
+        /// </summary>
+        /// <param name="clsConexion"></Crea una instancia a la clase conexion>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Frm_Admi_Usuario_Load(object sender, EventArgs e)
         {
             clsConexion clsConexion1 = new clsConexion();
@@ -27,6 +39,14 @@ namespace Proyecto_Biblioteca
         }
 
         int i;
+        //Metodo al seleccion una celda del datagridview
+        /// <summary>
+        /// Metodo al seleccion una celda del datagridview
+        /// </summary>
+        /// <param name="FindStringExact"></Encuentra el indice exacto mediante una comparacion de texto 
+        /// entre el combobox y la celda>
+        /// <param name="sender"></param>
+        /// <param name="e"></Indica el indice de la celda seleccionada>
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_Id_UsuarioSist.Enabled = false;
@@ -40,6 +60,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Boton que realiza la accion de agregar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de agregar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -83,6 +110,13 @@ namespace Proyecto_Biblioteca
             }
         }
 
+        //Boton que realiza la accion de eliminar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de eliminar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Eliminar_Usuario_Click(object sender, EventArgs e)
         {
             try
@@ -132,6 +166,13 @@ namespace Proyecto_Biblioteca
             }
         }
 
+        //Boton que realiza la accion de editar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de editar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             try

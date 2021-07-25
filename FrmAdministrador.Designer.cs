@@ -36,6 +36,7 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_UsuarioSist = new System.Windows.Forms.Button();
             this.btn_Admi_Libro = new System.Windows.Forms.Button();
             this.btn_Admi_Lector = new System.Windows.Forms.Button();
+            this.btn_generar_reporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Admi_Edi
@@ -43,9 +44,10 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Edi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Admi_Edi.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Edi.Image")));
             this.btn_Admi_Edi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Admi_Edi.Location = new System.Drawing.Point(437, 576);
+            this.btn_Admi_Edi.Location = new System.Drawing.Point(138, 202);
+            this.btn_Admi_Edi.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Admi_Edi.Name = "btn_Admi_Edi";
-            this.btn_Admi_Edi.Size = new System.Drawing.Size(636, 135);
+            this.btn_Admi_Edi.Size = new System.Drawing.Size(201, 47);
             this.btn_Admi_Edi.TabIndex = 7;
             this.btn_Admi_Edi.Text = "Editorial";
             this.btn_Admi_Edi.UseVisualStyleBackColor = true;
@@ -56,9 +58,10 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Cat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Admi_Cat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Cat.Image")));
             this.btn_Admi_Cat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Admi_Cat.Location = new System.Drawing.Point(437, 417);
+            this.btn_Admi_Cat.Location = new System.Drawing.Point(138, 147);
+            this.btn_Admi_Cat.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Admi_Cat.Name = "btn_Admi_Cat";
-            this.btn_Admi_Cat.Size = new System.Drawing.Size(636, 135);
+            this.btn_Admi_Cat.Size = new System.Drawing.Size(201, 47);
             this.btn_Admi_Cat.TabIndex = 6;
             this.btn_Admi_Cat.Text = "Categoria";
             this.btn_Admi_Cat.UseVisualStyleBackColor = true;
@@ -69,9 +72,10 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Autor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Admi_Autor.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Autor.Image")));
             this.btn_Admi_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Admi_Autor.Location = new System.Drawing.Point(437, 252);
+            this.btn_Admi_Autor.Location = new System.Drawing.Point(138, 89);
+            this.btn_Admi_Autor.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Admi_Autor.Name = "btn_Admi_Autor";
-            this.btn_Admi_Autor.Size = new System.Drawing.Size(636, 135);
+            this.btn_Admi_Autor.Size = new System.Drawing.Size(201, 47);
             this.btn_Admi_Autor.TabIndex = 5;
             this.btn_Admi_Autor.Text = "Autor";
             this.btn_Admi_Autor.UseVisualStyleBackColor = true;
@@ -82,9 +86,10 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_UsuarioSist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Admi_UsuarioSist.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_UsuarioSist.Image")));
             this.btn_Admi_UsuarioSist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Admi_UsuarioSist.Location = new System.Drawing.Point(437, 92);
+            this.btn_Admi_UsuarioSist.Location = new System.Drawing.Point(138, 32);
+            this.btn_Admi_UsuarioSist.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Admi_UsuarioSist.Name = "btn_Admi_UsuarioSist";
-            this.btn_Admi_UsuarioSist.Size = new System.Drawing.Size(636, 135);
+            this.btn_Admi_UsuarioSist.Size = new System.Drawing.Size(201, 47);
             this.btn_Admi_UsuarioSist.TabIndex = 4;
             this.btn_Admi_UsuarioSist.Text = "Usuario Sistema";
             this.btn_Admi_UsuarioSist.UseVisualStyleBackColor = true;
@@ -95,9 +100,10 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Libro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Admi_Libro.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Libro.Image")));
             this.btn_Admi_Libro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Admi_Libro.Location = new System.Drawing.Point(437, 755);
+            this.btn_Admi_Libro.Location = new System.Drawing.Point(138, 265);
+            this.btn_Admi_Libro.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Admi_Libro.Name = "btn_Admi_Libro";
-            this.btn_Admi_Libro.Size = new System.Drawing.Size(636, 139);
+            this.btn_Admi_Libro.Size = new System.Drawing.Size(201, 49);
             this.btn_Admi_Libro.TabIndex = 8;
             this.btn_Admi_Libro.Text = "Libro";
             this.btn_Admi_Libro.UseVisualStyleBackColor = true;
@@ -108,20 +114,36 @@ namespace Proyecto_Biblioteca
             this.btn_Admi_Lector.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_Admi_Lector.Image = ((System.Drawing.Image)(resources.GetObject("btn_Admi_Lector.Image")));
             this.btn_Admi_Lector.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Admi_Lector.Location = new System.Drawing.Point(437, 952);
+            this.btn_Admi_Lector.Location = new System.Drawing.Point(138, 330);
+            this.btn_Admi_Lector.Margin = new System.Windows.Forms.Padding(1);
             this.btn_Admi_Lector.Name = "btn_Admi_Lector";
-            this.btn_Admi_Lector.Size = new System.Drawing.Size(636, 131);
+            this.btn_Admi_Lector.Size = new System.Drawing.Size(201, 46);
             this.btn_Admi_Lector.TabIndex = 9;
             this.btn_Admi_Lector.Text = "Lector";
             this.btn_Admi_Lector.UseVisualStyleBackColor = true;
             this.btn_Admi_Lector.Click += new System.EventHandler(this.btn_Admi_Lector_Click);
             // 
+            // btn_generar_reporte
+            // 
+            this.btn_generar_reporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_generar_reporte.Image = ((System.Drawing.Image)(resources.GetObject("btn_generar_reporte.Image")));
+            this.btn_generar_reporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_generar_reporte.Location = new System.Drawing.Point(138, 387);
+            this.btn_generar_reporte.Margin = new System.Windows.Forms.Padding(1);
+            this.btn_generar_reporte.Name = "btn_generar_reporte";
+            this.btn_generar_reporte.Size = new System.Drawing.Size(201, 49);
+            this.btn_generar_reporte.TabIndex = 10;
+            this.btn_generar_reporte.Text = "Generar Reportes";
+            this.btn_generar_reporte.UseVisualStyleBackColor = true;
+            this.btn_generar_reporte.Click += new System.EventHandler(this.btn_generar_reporte_Click);
+            // 
             // FrmAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1477, 1179);
+            this.ClientSize = new System.Drawing.Size(492, 483);
+            this.Controls.Add(this.btn_generar_reporte);
             this.Controls.Add(this.btn_Admi_Lector);
             this.Controls.Add(this.btn_Admi_Libro);
             this.Controls.Add(this.btn_Admi_Edi);
@@ -129,6 +151,7 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.btn_Admi_Autor);
             this.Controls.Add(this.btn_Admi_UsuarioSist);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FrmAdministrador";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -147,5 +170,6 @@ namespace Proyecto_Biblioteca
         private System.Windows.Forms.Button btn_Admi_UsuarioSist;
         private System.Windows.Forms.Button btn_Admi_Libro;
         private System.Windows.Forms.Button btn_Admi_Lector;
+        private System.Windows.Forms.Button btn_generar_reporte;
     }
 }

@@ -18,6 +18,14 @@ namespace Proyecto_Biblioteca
             InitializeComponent();
         }
 
+        //Metodo al cargar el formulario
+        /// <summary>
+        /// Metodo al cargar el formulario
+        /// 
+        /// </summary>
+        /// <param name="clsConexion"></Crea una instancia a la clase conexion>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmLibro_Load(object sender, EventArgs e)
         {
             clsConexion clsConexion1 = new clsConexion();
@@ -50,6 +58,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Boton que realiza la accion de agregar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de agregar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Agre_libro_Click(object sender, EventArgs e)
         {
             try
@@ -98,6 +113,13 @@ namespace Proyecto_Biblioteca
         }
         String codigoEditorial;
 
+        //Metodo al seleccionar un item del combobox
+        /// <summary>
+        /// Metodo al seleccionar un item del combobox
+        /// </summary>
+        /// <param name="codigo"></Selecciona el valor del valuemember asociado con la base de datos>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             codigoEditorial = comboBox1.SelectedValue.ToString();
@@ -106,6 +128,13 @@ namespace Proyecto_Biblioteca
             
         }
         String codigoCategoria;
+        //Metodo al seleccionar un item del combobox
+        /// <summary>
+        /// Metodo al seleccionar un item del combobox
+        /// </summary>
+        /// <param name="codigo"></Selecciona el valor del valuemember asociado con la base de datos>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             codigoCategoria = comboBox2.SelectedValue.ToString();
@@ -126,6 +155,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Metodo al seleccionar un item del combobox
+        /// <summary>
+        /// Metodo al seleccionar un item del combobox
+        /// </summary>
+        /// <param name="codigo"></Selecciona el valor del valuemember asociado con la base de datos>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox3_SelectedIndexChanged_2(object sender, EventArgs e)
         {
             codigoAutor = comboBox3.SelectedValue.ToString();
@@ -133,6 +169,13 @@ namespace Proyecto_Biblioteca
 
         }
 
+        //Boton que realiza la accion de eliminar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de eliminar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Eliminar_Libros_Click(object sender, EventArgs e)
         {
             try
@@ -175,8 +218,14 @@ namespace Proyecto_Biblioteca
         }
         int i;
 
-        
 
+        //Metodo al seleccion una celda del datagridview
+        /// <summary>
+        /// Metodo al seleccion una celda del datagridview
+        /// </summary>
+        /// entre el combobox,textbox y la celda>
+        /// <param name="sender"></param>
+        /// <param name="e"></Indica el indice de la celda seleccionada>
         private void dgv_admi_libro_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
@@ -189,6 +238,13 @@ namespace Proyecto_Biblioteca
             comboBox3.SelectedIndex=comboBox3.FindStringExact(dgv_admi_libro.CurrentRow.Cells[6].Value.ToString());
         }
 
+        //Boton que realiza la accion de editar los datos a la base de datos
+        /// <summary>
+        /// Boton que realiza la accion de editar los datos a la base de datos
+        /// </summary>
+        /// <param name="@"></Identificador que crea una relacion entre el comando sql y una variable de c#>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Modi_libro_Click(object sender, EventArgs e)
         {
             try

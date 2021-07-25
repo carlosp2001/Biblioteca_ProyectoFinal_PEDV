@@ -59,11 +59,12 @@ namespace Proyecto_Biblioteca
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(682, 81);
+            this.label1.Location = new System.Drawing.Point(215, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 98);
+            this.label1.Size = new System.Drawing.Size(128, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "AUTOR ";
             // 
@@ -71,9 +72,10 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Modi_autor.BackColor = System.Drawing.Color.Silver;
             this.btn_Modi_autor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Modi_autor.Location = new System.Drawing.Point(1257, 503);
+            this.btn_Modi_autor.Location = new System.Drawing.Point(397, 177);
+            this.btn_Modi_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Modi_autor.Name = "btn_Modi_autor";
-            this.btn_Modi_autor.Size = new System.Drawing.Size(196, 102);
+            this.btn_Modi_autor.Size = new System.Drawing.Size(62, 36);
             this.btn_Modi_autor.TabIndex = 30;
             this.btn_Modi_autor.Text = "Modificar";
             this.btn_Modi_autor.UseVisualStyleBackColor = false;
@@ -83,9 +85,10 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Agre_autor.BackColor = System.Drawing.Color.Silver;
             this.btn_Agre_autor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Agre_autor.Location = new System.Drawing.Point(1257, 338);
+            this.btn_Agre_autor.Location = new System.Drawing.Point(397, 119);
+            this.btn_Agre_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Agre_autor.Name = "btn_Agre_autor";
-            this.btn_Agre_autor.Size = new System.Drawing.Size(196, 94);
+            this.btn_Agre_autor.Size = new System.Drawing.Size(62, 33);
             this.btn_Agre_autor.TabIndex = 29;
             this.btn_Agre_autor.Text = "Agregar";
             this.btn_Agre_autor.UseVisualStyleBackColor = false;
@@ -105,11 +108,12 @@ namespace Proyecto_Biblioteca
             this.aPELLIDOSAUTORDataGridViewTextBoxColumn,
             this.nACIONALIDADAUTORDataGridViewTextBoxColumn});
             this.dgv_admi_cat.DataSource = this.autoresBindingSource;
-            this.dgv_admi_cat.Location = new System.Drawing.Point(143, 912);
+            this.dgv_admi_cat.Location = new System.Drawing.Point(45, 320);
+            this.dgv_admi_cat.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgv_admi_cat.Name = "dgv_admi_cat";
             this.dgv_admi_cat.RowHeadersWidth = 40;
             this.dgv_admi_cat.RowTemplate.Height = 46;
-            this.dgv_admi_cat.Size = new System.Drawing.Size(1419, 225);
+            this.dgv_admi_cat.Size = new System.Drawing.Size(448, 79);
             this.dgv_admi_cat.TabIndex = 28;
             this.dgv_admi_cat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_admi_cat_CellClick);
             this.dgv_admi_cat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_admi_cat_CellContentClick);
@@ -155,30 +159,34 @@ namespace Proyecto_Biblioteca
             // 
             // txt_Nacionalidad_autor
             // 
-            this.txt_Nacionalidad_autor.Location = new System.Drawing.Point(432, 714);
+            this.txt_Nacionalidad_autor.Location = new System.Drawing.Point(136, 251);
+            this.txt_Nacionalidad_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Nacionalidad_autor.Name = "txt_Nacionalidad_autor";
-            this.txt_Nacionalidad_autor.Size = new System.Drawing.Size(185, 44);
+            this.txt_Nacionalidad_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Nacionalidad_autor.TabIndex = 23;
             // 
             // txt_Apellido_autor
             // 
-            this.txt_Apellido_autor.Location = new System.Drawing.Point(432, 580);
+            this.txt_Apellido_autor.Location = new System.Drawing.Point(136, 204);
+            this.txt_Apellido_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Apellido_autor.Name = "txt_Apellido_autor";
-            this.txt_Apellido_autor.Size = new System.Drawing.Size(185, 44);
+            this.txt_Apellido_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Apellido_autor.TabIndex = 22;
             // 
             // txt_Nombre_autor
             // 
-            this.txt_Nombre_autor.Location = new System.Drawing.Point(432, 440);
+            this.txt_Nombre_autor.Location = new System.Drawing.Point(136, 155);
+            this.txt_Nombre_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Nombre_autor.Name = "txt_Nombre_autor";
-            this.txt_Nombre_autor.Size = new System.Drawing.Size(185, 44);
+            this.txt_Nombre_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Nombre_autor.TabIndex = 21;
             // 
             // txt_Id_autor
             // 
-            this.txt_Id_autor.Location = new System.Drawing.Point(432, 304);
+            this.txt_Id_autor.Location = new System.Drawing.Point(136, 107);
+            this.txt_Id_autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txt_Id_autor.Name = "txt_Id_autor";
-            this.txt_Id_autor.Size = new System.Drawing.Size(185, 44);
+            this.txt_Id_autor.Size = new System.Drawing.Size(61, 20);
             this.txt_Id_autor.TabIndex = 20;
             // 
             // Telefono_UsuarioSist
@@ -186,9 +194,10 @@ namespace Proyecto_Biblioteca
             this.Telefono_UsuarioSist.AutoSize = true;
             this.Telefono_UsuarioSist.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Telefono_UsuarioSist.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Telefono_UsuarioSist.Location = new System.Drawing.Point(175, 721);
+            this.Telefono_UsuarioSist.Location = new System.Drawing.Point(55, 253);
+            this.Telefono_UsuarioSist.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.Telefono_UsuarioSist.Name = "Telefono_UsuarioSist";
-            this.Telefono_UsuarioSist.Size = new System.Drawing.Size(226, 37);
+            this.Telefono_UsuarioSist.Size = new System.Drawing.Size(85, 13);
             this.Telefono_UsuarioSist.TabIndex = 19;
             this.Telefono_UsuarioSist.Text = "Nacionalidad:";
             // 
@@ -197,9 +206,10 @@ namespace Proyecto_Biblioteca
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label4.Location = new System.Drawing.Point(181, 588);
+            this.label4.Location = new System.Drawing.Point(57, 207);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 37);
+            this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 18;
             this.label4.Text = "Apellido:";
             // 
@@ -208,9 +218,10 @@ namespace Proyecto_Biblioteca
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(175, 448);
+            this.label3.Location = new System.Drawing.Point(55, 157);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 37);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 17;
             this.label3.Text = "Nombre:";
             // 
@@ -219,9 +230,10 @@ namespace Proyecto_Biblioteca
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Location = new System.Drawing.Point(175, 303);
+            this.label2.Location = new System.Drawing.Point(55, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 37);
+            this.label2.Size = new System.Drawing.Size(22, 13);
             this.label2.TabIndex = 16;
             this.label2.Text = "Id:";
             // 
@@ -233,9 +245,10 @@ namespace Proyecto_Biblioteca
             // 
             this.btn_Eli_Autor.BackColor = System.Drawing.Color.Silver;
             this.btn_Eli_Autor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btn_Eli_Autor.Location = new System.Drawing.Point(1257, 674);
+            this.btn_Eli_Autor.Location = new System.Drawing.Point(397, 237);
+            this.btn_Eli_Autor.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btn_Eli_Autor.Name = "btn_Eli_Autor";
-            this.btn_Eli_Autor.Size = new System.Drawing.Size(196, 94);
+            this.btn_Eli_Autor.Size = new System.Drawing.Size(62, 33);
             this.btn_Eli_Autor.TabIndex = 31;
             this.btn_Eli_Autor.Text = "Eliminar";
             this.btn_Eli_Autor.UseVisualStyleBackColor = false;
@@ -243,10 +256,10 @@ namespace Proyecto_Biblioteca
             // 
             // FrmAutorTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1732, 1221);
+            this.ClientSize = new System.Drawing.Size(537, 430);
             this.Controls.Add(this.btn_Eli_Autor);
             this.Controls.Add(this.btn_Modi_autor);
             this.Controls.Add(this.btn_Agre_autor);
@@ -261,6 +274,7 @@ namespace Proyecto_Biblioteca
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "FrmAutorTable";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
